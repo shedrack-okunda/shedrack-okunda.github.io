@@ -476,40 +476,8 @@ h2 span {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.progress-list .progress-item .progress1 .progress-fill-1 {
-  background-color: #b0d;
-  width: 95%;
-  
-}
-
-.progress-list .progress-item .progress1 .progress-fill-2 {
-  background-color: #e3a;
-  width: 90%;
-}
-
-.progress-list .progress-item .progress1 .progress-fill-3 {
-  background-color: #6b6;
-  width: 80%;
-}
-
-.progress-list .progress-item .progress1 .progress-fill-4 {
-  background-color: #4c1;
-  width: 70%;
-}
-
-.progress-list .progress-item .progress1 .progress-fill-5 {
-  background-color: #1dd;
-  width: 50%;
-}
-
-.progress-list .progress-item .progress1 .progress-fill-6 {
-  background-color: #c7b;
-  width: 70%;
-}
-
-.progress-list .progress-item .progress1 .progress-fill-7 {
-  background-color: #8ca;
-  width: 65%;
+.progress-list .progress-item .progress1 .progress-fill {
+  background-color: var(--primary-color);
 }
 
 .progress-list {
@@ -553,9 +521,7 @@ h2 span {
   background: #130c24;
 }
 
-.progress-list .progress-item .progress-fill-1, 
-.progress-fill-2, .progress-fill-3, .progress-fill-4,
-.progress-fill-5, .progress-fill-6, .progress-fill-7 {
+.progress-list .progress-item .progress-fill {
   position: absolute;
   top: 0;
   left: 0;

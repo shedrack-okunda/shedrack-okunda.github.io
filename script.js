@@ -136,24 +136,28 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // contact form email js
 const btn = document.getElementById("button");
 
+function sendMail() {
+  var params = {
+    from_name: document.getElementById("hire-name").value,
+    email_id: document.getElementById("hire-email").value,
+    message: document.getElementById("hire-message").value,
+  };
+  emailjs.send("service_2vf4yad", "template_h1no3ni", params).then(
+    function (response) {
+      btn.value = "Send Message";
+      alert("Success!", response);
+    },
+    function (err) {
+      btn.value = "Send Message";
+      alert("Failed", err);
+    }
+  );
+}
+
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
 
   btn.value = "Sending...";
-
-  const serviceID = "default_service"; //service_2vf4yad
-  const templateID = "template_h1no3ni"; //template_h1no3ni
-
-  emailjs.sendForm(serviceID, templateID, this).then(
-    () => {
-      btn.value = "Send Email";
-      alert("Sent!");
-    },
-    (err) => {
-      btn.value = "Send Email";
-      alert(JSON.stringify(err));
-    }
-  );
 });
 
 // Footer

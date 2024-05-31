@@ -240,6 +240,34 @@ header ul li a {
     color: var(--primary-color);
 }
 
+/* welcome message */
+.welcome-message {
+  display: none;
+  position: fixed;
+  top: 56px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+  z-index: 1000;
+  font-size: 1.3em;
+  font-weight: var(--fw-700);
+  opacity: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 1s;
+}
+
+.welcome-message.show {
+  display: block;
+  opacity: 1;
+}
+
+.welcome-message.hide {
+  opacity: 0;
+}
+
 /* Home section */
 .hero {
   padding-block-start: calc(var(--section-padding) + 50px);

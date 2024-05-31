@@ -57,6 +57,26 @@ window.onscroll = () => {
   });
 };
 
+// welcome message
+window.onload = function () {
+  const welcomeMessage = document.getElementById("welcome-message");
+
+  // show the welcome message after 2 seconds
+  setTimeout(function () {
+    welcomeMessage.classList.add("show");
+  }, 2000);
+
+  // hide the welcome message after 6 seconds (2 seconds for initial delay + 4 seconds display time)
+  setTimeout(function () {
+    welcomeMessage.classList.add("hide");
+  }, 6000);
+
+  // remove the message after the fade-out animation is complete
+  setTimeout(function () {
+    welcomeMessage.style.display = "none";
+  }, 7000);
+};
+
 // Scroll reveal
 const revealElements = document.querySelectorAll("[data-reveal]");
 const revealDelayElements = document.querySelectorAll("[data-reveal-delay]");
@@ -122,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // checks if the setText[i] exists
     if (i < setText[i].length) {
-      // if the text exists if starts the typing animation
+      // if the text exists it starts the typing animation
       typeTextAnimation(setText[i], 0, function () {
         // starts the next text after the callback function and the whole text has been animated
         startTextAnimation(i + 1);

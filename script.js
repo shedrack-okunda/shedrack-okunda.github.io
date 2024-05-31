@@ -153,6 +153,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
   startTextAnimation(0);
 });
 
+// skill section
+window.addEventListener("scroll", function () {
+  document.querySelectorAll(".progress-fill").forEach(function (bar) {
+    const skillLevel = bar.getAttribute("data-skill-level");
+    const barTop = bar.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if (barTop < windowHeight) {
+      bar.style.width = skillLevel;
+    }
+  });
+});
+
 // contact form email js
 const btn = document.getElementById("button");
 

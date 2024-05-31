@@ -251,7 +251,7 @@ header ul li a {
   padding: 10px 15px;
   border-radius: 10px;
   z-index: 1000;
-  font-size: 1.3em;
+  font-size: var(--fs-4);
   font-weight: var(--fw-700);
   opacity: 0;
   left: 50%;
@@ -506,6 +506,9 @@ h2 span {
 
 .progress-list .progress-item .progress1 .progress-fill {
   background-color: var(--primary-color);
+  height: 10px;
+  width: 0;
+  transition: width 2s;
 }
 
 .progress-list {

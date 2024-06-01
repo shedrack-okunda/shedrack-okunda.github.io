@@ -244,7 +244,7 @@ header ul li a {
 .welcome-message {
   display: none;
   position: fixed;
-  top: 56px;
+  top: 70px;
   background-color: var(--primary-color);
   color: var(--white);
   text-align: center;
@@ -506,7 +506,6 @@ h2 span {
 
 .progress-list .progress-item .progress1 .progress-fill {
   background-color: var(--primary-color);
-  height: 10px;
   width: 0;
   transition: width 2s;
 }

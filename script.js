@@ -182,9 +182,6 @@ window.addEventListener("scroll", animateSkillBars);
 // event listener for page load
 window.addEventListener("load", animateSkillBars);
 
-// initial check in case elements are already in view
-document.addEventListener("DOMContentLoaded", animateSkillBars);
-
 // contact form email js
 const btn = document.getElementById("button");
 

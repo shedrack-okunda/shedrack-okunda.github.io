@@ -240,12 +240,16 @@ header ul li a {
     color: var(--primary-color);
 }
 
+.progress-name abbr[title] {
+  text-decoration: none;
+  border-bottom: none;
+}
+
 /* welcome message */
 .welcome-message {
   display: none;
   position: fixed;
   top: 70px;
-  background-color: var(--primary-color);
   color: var(--white);
   text-align: center;
   padding: 10px 15px;

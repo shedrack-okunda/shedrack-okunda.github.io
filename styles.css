@@ -240,11 +240,6 @@ header ul li a {
     color: var(--primary-color);
 }
 
-.progress-name abbr[title] {
-  text-decoration: none;
-  border-bottom: none;
-}
-
 /* welcome message */
 .welcome-message {
   display: none;
@@ -512,6 +507,11 @@ h2 span {
   background-color: var(--primary-color);
   width: 0;
   transition: width 2s;
+}
+
+.progress-name abbr[title] {
+  text-decoration: none;
+  border-bottom: none;
 }
 
 .progress-list {

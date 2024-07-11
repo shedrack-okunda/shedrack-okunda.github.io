@@ -45,7 +45,7 @@
 }
 
 html {
-  font-size: 12px;
+  font-size: 10px;
   scroll-behavior: smooth;
   padding-top: 50px;
   line-height: 1.5;
@@ -54,7 +54,7 @@ html {
 body {
   background-color: #130c24 !important;
   color: hsl(0, 0%, 60%) !important;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 ::-webkit-scrollbar {
@@ -279,8 +279,8 @@ header ul li a {
   font-weight: var(--fw-700);
   border: 2px solid;
   max-width: max-content;
-  padding: 12px 28px;
-  border-radius: var(--radius-pill);
+  padding: 10px 26px;
+  border-radius: 10px;
   transition: var(--transition-1);
   will-change: transform;
 }
@@ -335,7 +335,7 @@ h2 span {
   
   .wrapper .icon {
     position: relative;
-    background: #fff;
+    background: #ffe;
     border-radius: 50%;
     padding: 14px;
     margin: 10px;
@@ -350,64 +350,25 @@ h2 span {
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-  
-  .wrapper .tooltip {
-    position: absolute;
-    top: 0;
-    font-size: 14px;
-    background: #ffffff;
-    color: #ffffff;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .tooltip::before {
-    position: absolute;
-    content: "";
-    height: 8px;
-    width: 8px;
-    background: #ffffff;
-    bottom: -3px;
-    left: 50%;
-    transform: translate(-50%) rotate(45deg);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .icon:hover .tooltip {
-    top: -45px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-  
-  .wrapper .icon:hover span,
-  .wrapper .icon:hover .tooltip {
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+
+  .wrapper .icon i {
+    font-size: var(--fs-3);
+    color: var(--secondary-color);
   }
 
-  .wrapper .github:hover,
-  .wrapper .github:hover .tooltip,
-  .wrapper .github:hover .tooltip::before {
-    background: #24292D;
+  .wrapper .github:hover {
+    background: var(--primary-color);
     color: #ffffff;
   }
 
-  .wrapper .linkedin:hover,
-.wrapper .linkedin:hover .tooltip,
-.wrapper .linkedin:hover .tooltip::before {
-  background: #313335;
+  .wrapper .linkedin:hover {
+  background: var(--primary-color);
   color: #ffffff;
 }
 
 
-  .wrapper .twitter:hover,
-  .wrapper .twitter:hover .tooltip,
-  .wrapper .twitter:hover .tooltip::before {
-    background: #000000;
+  .wrapper .twitter:hover {
+    background: var(--primary-color);
     color: #ffffff;
   }
 
@@ -421,8 +382,8 @@ h2 span {
   font-weight: var(--fw-700);
   border: 2px solid;
   max-width: max-content;
-  padding: 12px 28px;
-  border-radius: var(--radius-pill);
+  padding: 10px 26px;
+  border-radius: 10px;
   transition: var(--transition-1);
   will-change: transform;
 }
@@ -436,8 +397,16 @@ h2 span {
 
 /* Services section */
 .about-service {
-  text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.about-service h3 {
+  text-align: center;
+}
+
+.about-service p {
+  text-align: left;
+  margin: 30px;
 }
 
 .about-service .title-3 {
@@ -447,6 +416,7 @@ h2 span {
 .about-service .service-icon {
   max-width: max-content;
   margin-inline: auto;
+  margin-top: 10px;
 }
 
 #services {
@@ -498,6 +468,7 @@ h2 span {
 
 .progress-list .progress-item {
   display: inline-block;
+  margin-top: 10px;
   width: 100%;
   vertical-align: middle;
 }
@@ -546,6 +517,10 @@ h2 span {
 }
 
 /* Projects section */
+.project .section-text {
+  margin: 20px;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -559,6 +534,11 @@ h2 span {
   display: grid;
   text-align: center;
   gap: 25px;
+}
+
+.work p {
+  text-align: left;
+  margin: 30px;
 }
 
 .work-list .title-3 {
@@ -645,8 +625,8 @@ textarea.input {
   border: 2px solid;
   letter-spacing: 1.5px;
   max-width: max-content;
-  padding: 12px 28px;
-  border-radius: var(--radius-pill);
+  padding: 10px 26px;
+  border-radius: 10px;
   transition: var(--transition-1);
   will-change: transform;
 }
@@ -665,7 +645,7 @@ textarea.input {
 
 /* footer */
 .footer {
-  padding-block: 20px;
+  padding-block: 10px;
   text-align: center;
 }
 

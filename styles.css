@@ -98,7 +98,7 @@ body {
 }
 
 .section-text {
-  font-size: var(--fs-5);
+  font-size: var(--fs-4);
 }
 
 /* Scroll Arrow */
@@ -377,6 +377,10 @@ h2 span {
   padding: 10px 20px;
 }
 
+.about .etc {
+  margin: 20px;
+}
+
 .callAction a {
   font-size: var(--fs-6);
   font-weight: var(--fw-700);
@@ -406,7 +410,7 @@ h2 span {
 
 .about-service p {
   text-align: left;
-  margin: 30px;
+  margin: 20px;
 }
 
 .about-service .title-3 {
@@ -659,6 +663,13 @@ textarea.input {
 }
 
 /* Media Queries */
+@media (min-width: 375px) {
+  .img-box {
+    height: 410px;
+    margin-left: 10px;
+  }
+}
+
 /* responsive for large than 575px */
 @media (min-width: 575px) {
   /* reused style */
@@ -675,7 +686,7 @@ textarea.input {
   }
 
   .img-box {
-    margin-left: 80px;
+    margin-left: 70px;
   }
 
   /* project section */
@@ -724,7 +735,7 @@ textarea.input {
   }
 
   .hero .container {
-    grid-template-columns: 0,8fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
     gap: 100px;
   }
@@ -760,7 +771,7 @@ textarea.input {
 
   /* home section */
   .home {
-    display: flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
@@ -769,7 +780,7 @@ textarea.input {
   .img-box {
     position: relative;
     width: 270px;
-    height: 450px;
+    height: 370px;
     margin-left: 0;
   }
 
@@ -787,11 +798,7 @@ textarea.input {
   }
 
   /* home section */
-  .hero .container {
-    grid-template-columns: 1fr 0.8fr;
-  }
-
-  .hero .section-text {
+  .section-text {
     font-size: 2.4rem;
   }
 }

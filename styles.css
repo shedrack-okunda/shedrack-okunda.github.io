@@ -1,14 +1,13 @@
-
 :root {
-/* color */
+  /* color */
   --secondary-color: hsl(258, 52%, 9%);
   --primary-color: hsl(50, 87%, 61%);
   --white: hsla(0, 0%, 100%, 1);
 
-/* typography */
+  /* typography */
   --fs-1: calc(2.4rem + 1.35vw);
-  --fs-2: calc(2.3rem + .63vw);
-  --fs-3: calc(2.6rem + .24vw);
+  --fs-2: calc(2.3rem + 0.63vw);
+  --fs-3: calc(2.6rem + 0.24vw);
   --fs-4: 1.9rem;
   --fs-5: 1.8rem;
   --fs-6: 1.7rem;
@@ -30,18 +29,20 @@
   --radius-8: 8px;
   --radius-6: 6px;
 
-/* transition */
+  /* transition */
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
   --transition-3: 0.3s ease-in-out;
-
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins" Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Poppins" Arial,
+    Helvetica,
+    sans-serif;
 }
 
 html {
@@ -110,7 +111,7 @@ body {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  background-color: #120C31;
+  background-color: var(--secondary-color);
   color: var(--primary-color);
   font-size: var(--fs-2);
   font-weight: var(--fw-700);
@@ -127,20 +128,20 @@ body {
   transition: 0.75s ease;
 }
 
-[data-reveal="top"] { 
-  transform: translateY(-30px); 
+[data-reveal="top"] {
+  transform: translateY(-30px);
 }
 
-[data-reveal="bottom"] { 
+[data-reveal="bottom"] {
   transform: translateY(30px);
 }
 
-[data-reveal="left"] { 
-  transform: translateX(-30px); 
+[data-reveal="left"] {
+  transform: translateX(-30px);
 }
 
-[data-reveal="right"] { 
-  transform: translateX(30px); 
+[data-reveal="right"] {
+  transform: translateX(30px);
 }
 
 [data-reveal].revealed {
@@ -149,11 +150,11 @@ body {
 }
 
 .btn-warning:hover {
-transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .btn-outline-warning:hover {
-transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .title {
@@ -192,7 +193,6 @@ a {
 .navbar-toggler {
   background-color: var(--primary-color) !important;
   font-size: 2rem;
-
 }
 
 header nav a {
@@ -200,7 +200,8 @@ header nav a {
   border-radius: 5px;
 }
 
-header nav a:hover, header nav a.active {
+header nav a:hover,
+header nav a.active {
   background: var(--primary-color);
   transition: 0.5s ease-out;
   letter-spacing: 2px;
@@ -212,36 +213,36 @@ header nav a:hover, header nav a.active {
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 10px 10px;
-    letter-spacing: 2px;
+  display: inline-block;
+  margin: 10px 10px;
+  letter-spacing: 2px;
 }
 
 nav ul li a {
-    position: relative;
-    align-content: center;
-    align-items: center;
-    align-self: center;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  align-self: center;
 }
 
 header ul {
-    align-items: center;
-    margin-left: 10em;
+  align-items: center;
+  margin-left: 10em;
 }
 
 header ul li a {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .navbar-brand::first-letter {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 /* Home section */
@@ -299,24 +300,24 @@ header ul li a {
 }
 
 .img-box {
-    position: relative;
-    width: 300px;
-    height: 450px;
+  position: relative;
+  width: 300px;
+  height: 450px;
 }
 
 .image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 /* Animation typewriter*/
 h2 span {
-  border-right: .08em solid #f2d544;
+  border-right: 0.08em solid #f2d544;
   animation-name: RoleAnimate 1s steps(1);
 }
 
@@ -328,49 +329,48 @@ h2 span {
 
 /* social media */
 .wrapper {
-    display: inline-flex;
-    gap: 5px;
-    list-style: none;
-  }
-  
-  .wrapper .icon {
-    position: relative;
-    background: #ffe;
-    border-radius: 50%;
-    padding: 14px;
-    margin: 10px;
-    width: 45px;
-    height: 45px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
+  display: inline-flex;
+  gap: 5px;
+  list-style: none;
+}
 
-  .wrapper .icon i {
-    font-size: var(--fs-3);
-    color: var(--secondary-color);
-  }
+.wrapper .icon {
+  position: relative;
+  background: #ffe;
+  border-radius: 50%;
+  padding: 14px;
+  margin: 10px;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
 
-  .wrapper .github:hover {
-    background: var(--primary-color);
-    color: #ffffff;
-  }
+.wrapper .icon i {
+  font-size: var(--fs-3);
+  color: var(--secondary-color);
+}
 
-  .wrapper .linkedin:hover {
+.wrapper .github:hover {
   background: var(--primary-color);
   color: #ffffff;
 }
 
+.wrapper .linkedin:hover {
+  background: var(--primary-color);
+  color: #ffffff;
+}
 
-  .wrapper .twitter:hover {
-    background: var(--primary-color);
-    color: #ffffff;
-  }
+.wrapper .twitter:hover {
+  background: var(--primary-color);
+  color: #ffffff;
+}
 
 /* About section */
 .about {
@@ -391,7 +391,7 @@ h2 span {
   transition: var(--transition-1);
   will-change: transform;
 }
- 
+
 .callAction {
   display: flex;
   flex-wrap: wrap;
@@ -409,8 +409,7 @@ h2 span {
 }
 
 .about-service p {
-  text-align: left;
-  margin: 20px;
+  text-align: center;
 }
 
 .about-service .title-3 {
@@ -541,8 +540,7 @@ h2 span {
 }
 
 .work p {
-  text-align: left;
-  margin: 30px;
+  text-align: center;
 }
 
 .work-list .title-3 {
@@ -585,8 +583,8 @@ h2 span {
   font-size: var(--fs-4);
   text-decoration: none;
   color: #f2d544;
-  opacity: .85;
-  transition: opacity .2s;
+  opacity: 0.85;
+  transition: opacity 0.2s;
 }
 
 .contact-1 .hire-line div a:hover {
@@ -610,7 +608,7 @@ h2 span {
   font-size: 22px;
   font-weight: 300;
   line-height: 1.9;
-  transition: border-color .2s;
+  transition: border-color 0.2s;
 }
 
 .input:focus {
@@ -771,10 +769,10 @@ textarea.input {
 
   /* home section */
   .home {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .img-box {

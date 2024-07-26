@@ -77,12 +77,13 @@ window.addEventListener("load", reveal);
 // typewriter animation
 document.addEventListener("DOMContentLoaded", function (event) {
   const setText = [
-    "Web Developer..",
-    "UI/UX Designer..",
-    "SEO Specialist..",
-    "Programmer..",
-    "Freelancer..",
-    "Web Designer..",
+    "Web Developer ",
+    "UI/UX Designer ",
+    "SEO Specialist ",
+    "Programmer ",
+    "Freelancer ",
+    "Web Designer ",
+    "AI Enthusiast ",
   ];
 
   function typeTextAnimation(text, i, callbackFunc) {

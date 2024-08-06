@@ -1,5 +1,3 @@
-"use strict";
-
 // Scroll Arrow
 document.addEventListener("DOMContentLoaded", function () {
   const scrollArrow = document.getElementById("scrollArrow");
@@ -19,13 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-// add event listener on multiple elements
-const addEventOnElements = function (elements, eventType, callback) {
-  for (let i = 0, len = elements.length; i < len; i++) {
-    elements[i].addEventListener(eventType, callback);
-  }
-};
 
 // navbar
 const section = document.querySelectorAll("section");
@@ -127,7 +118,6 @@ function isInViewport(element) {
   );
 }
 
-// animates the skill bars
 function animateSkillBars() {
   document.querySelectorAll(".progress-fill").forEach(function (bar) {
     if (isInViewport(bar)) {

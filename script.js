@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
 const section = document.querySelectorAll("section");
 const menu = document.querySelectorAll("nav ul li a");
 
-// animate the navbar when the section is scrolled into view
 window.onscroll = () => {
   section.forEach((i) => {
     let top = window.scrollY;
@@ -30,7 +29,6 @@ window.onscroll = () => {
     let height = i.offsetHeight;
     let id = i.getAttribute("id");
 
-    // makes the links active as you scroll down the page
     if (top >= offset && top < offset + height) {
       menu.forEach((link) => {
         link.classList.remove("active");
@@ -67,16 +65,6 @@ window.addEventListener("load", reveal);
 
 // typewriter animation
 document.addEventListener("DOMContentLoaded", function (event) {
-  const setText = [
-    "Web Developer ",
-    "UI/UX Designer ",
-    "SEO Specialist ",
-    "Programmer ",
-    "Freelancer ",
-    "Web Designer ",
-    "AI Enthusiast ",
-  ];
-
   function typeTextAnimation(text, i, callbackFunc) {
     if (i < text.length) {
       document.querySelector(".role").innerHTML =
@@ -90,13 +78,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
   function startTextAnimation(i) {
+    const setText = [
+      "Web Developer ",
+      "UI/UX Designer ",
+      "SEO Specialist ",
+      "Web Designer ",
+      "Programmer ",
+      "AI Enthusiast ",
+      "Freelancer ",
+    ];
+
     if (typeof setText[i] == "undefined") {
       setTimeout(function () {
         startTextAnimation(0);
       }, 2000);
     }
 
-    if (i < setText[i].length) {
+    if (setText && setText[i] && i < setText[i].length) {
       typeTextAnimation(setText[i], 0, function () {
         startTextAnimation(i + 1);
       });

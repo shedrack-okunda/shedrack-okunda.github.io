@@ -1,10 +1,8 @@
 :root {
-  /* color */
   --secondary-color: hsl(258, 52%, 9%);
   --primary-color: hsl(50, 87%, 61%);
   --white: hsla(0, 0%, 100%, 1);
 
-  /* typography */
   --fs-1: calc(2.4rem + 1.35vw);
   --fs-2: calc(2.3rem + 0.63vw);
   --fs-3: calc(2.6rem + 0.24vw);
@@ -16,20 +14,16 @@
 
   --fw-700: 700;
 
-  /* spacing */
   --section-padding: 90px;
 
-  /* box-shadow */
   --shadow-1: 0 0 20px hsla(216, 14%, 14%, 0.05);
   --shadow-2: 0 4px 28px hsla(216, 14%, 14%, 0.07);
 
-  /* border-radius */
   --radius-circle: 50%;
   --radius-pill: 100px;
   --radius-8: 8px;
   --radius-6: 6px;
 
-  /* transition */
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
   --transition-3: 0.3s ease-in-out;
@@ -46,7 +40,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 11px;
   scroll-behavior: smooth;
   padding-top: 50px;
   line-height: 1.5;
@@ -302,7 +296,7 @@ header ul li a {
 .img-box {
   position: relative;
   width: 300px;
-  height: 450px;
+  height: 410px;
 }
 
 .image {
@@ -377,10 +371,6 @@ h2 span {
   padding: 10px 20px;
 }
 
-.about .etc {
-  margin: 20px;
-}
-
 .callAction a {
   font-size: var(--fs-6);
   font-weight: var(--fw-700);
@@ -409,7 +399,7 @@ h2 span {
 }
 
 .about-service p {
-  text-align: center;
+  margin-left: 20px;
 }
 
 .about-service .title-3 {
@@ -434,23 +424,8 @@ h2 span {
 }
 
 /* Skills */
-.skills .design .title-3 {
-  font-size: var(--fs-3);
-  line-height: 1.3;
-  text-align: center;
-  font-weight: var(--fw-700);
-  margin-bottom: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.skills .development .title-3 {
-  font-size: var(--fs-3);
-  line-height: 1.3;
-  text-align: center;
-  font-weight: var(--fw-700);
-  margin-bottom: 10px;
-  margin-top: 40px;
-  font-family: Arial, Helvetica, sans-serif;
+.development {
+  margin: 50px;
 }
 
 .progress-list .progress-item .progress1 .progress-fill {
@@ -527,16 +502,16 @@ h2 span {
 .project-card {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 20px;
   border-radius: var(--radius-8);
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .work-list {
   display: grid;
   text-align: center;
-  gap: 25px;
+  gap: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .work p {
@@ -627,7 +602,7 @@ textarea.input {
   border: 2px solid;
   letter-spacing: 1.5px;
   max-width: max-content;
-  padding: 10px 26px;
+  padding: 10px 25px;
   border-radius: 10px;
   transition: var(--transition-1);
   will-change: transform;
@@ -651,55 +626,37 @@ textarea.input {
   text-align: center;
 }
 
-.footer .container {
-  padding: 0;
-  margin: 30px;
-}
-
 .copyright {
   font-size: var(--fs-5);
 }
 
 /* Media Queries */
-@media (min-width: 375px) {
-  .img-box {
-    height: 410px;
-  }
-}
-
-/* responsive for large than 575px */
 @media (min-width: 575px) {
-  /* reused style */
   .container {
     max-width: 540px;
     width: 100%;
     margin-inline: auto;
   }
 
-  /* hero section */
   .home {
     display: grid;
     grid-template-columns: 1fr;
   }
 
   .img-box {
-    margin-left: 70px;
+    margin-left: 50px;
   }
 
-  /* project section */
   .project-card {
     padding: 68px;
   }
 
-  /* contact section */
   .contact {
     padding: 68px;
   }
 }
 
-/* responsive for large than 768px */
 @media (min-width: 768px) {
-  /* reused style */
   .container {
     max-width: 720px;
   }
@@ -708,25 +665,20 @@ textarea.input {
     font-size: 2rem;
   }
 
-  /* hero section */
   .img-box {
     margin-left: 80px;
   }
 
-  /* contact section */
   .contact .section-text {
     font-size: 1.8rem;
   }
 }
 
-/* responsive for large than 992px screen */
 @media (min-width: 992px) {
-  /* reused style */
   .container {
     max-width: 960px;
   }
 
-  /* home section */
   .hero {
     padding-block-start: 120 + 80px;
   }
@@ -745,13 +697,11 @@ textarea.input {
     justify-content: flex-start;
   }
 
-  /* project */
   .project .work-list {
     grid-template-columns: 1fr 1fr;
     row-gap: 50px;
   }
 
-  /* contact section */
   .contact {
     grid-template-columns: 0.8fr 1fr;
     align-items: center;
@@ -759,14 +709,11 @@ textarea.input {
   }
 }
 
-/* responsive for large than 1200px screen */
 @media (min-width: 1200px) {
-  /* reused style */
   .container {
     max-width: 1140px;
   }
 
-  /* home section */
   .home {
     display: flex;
     justify-content: space-between;
@@ -781,20 +728,16 @@ textarea.input {
     margin-left: 0;
   }
 
-  /* contact section */
   .contact {
     gap: 150px;
   }
 }
 
-/* responsive for large than 1400px screen */
 @media (min-width: 1400px) {
-  /* reused styles */
   .container {
     max-width: 1320px;
   }
 
-  /* home section */
   .section-text {
     font-size: 2.4rem;
   }

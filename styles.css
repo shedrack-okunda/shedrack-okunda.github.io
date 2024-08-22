@@ -47,7 +47,7 @@ html {
 }
 
 body {
-  background-color: #130c24 !important;
+  background-color: var(--secondary-color) !important;
   color: hsl(0, 0%, 60%) !important;
   font-size: 1.6rem;
 }
@@ -368,7 +368,7 @@ h2 span {
 
 /* About section */
 .about {
-  padding: 10px 20px;
+  padding: 10px;
 }
 
 .callAction a {
@@ -425,7 +425,7 @@ h2 span {
 
 /* Skills */
 .development {
-  margin: 50px;
+  margin: 30px;
 }
 
 .progress-list .progress-item .progress1 .progress-fill {
@@ -648,7 +648,7 @@ textarea.input {
   }
 
   .project-card {
-    padding: 68px;
+    padding: 58px;
   }
 
   .contact {
@@ -667,6 +667,10 @@ textarea.input {
 
   .img-box {
     margin-left: 80px;
+  }
+
+  .project-card {
+    padding: 58px;
   }
 
   .contact .section-text {
@@ -695,6 +699,10 @@ textarea.input {
 
   .hero .hire {
     justify-content: flex-start;
+  }
+
+  .project-card {
+    padding: 58px;
   }
 
   .project .work-list {
@@ -728,6 +736,10 @@ textarea.input {
     margin-left: 0;
   }
 
+  .project-card {
+    padding: 58px;
+  }
+
   .contact {
     gap: 150px;
   }
@@ -740,5 +752,9 @@ textarea.input {
 
   .section-text {
     font-size: 2.4rem;
+  }
+
+  .project-card {
+    padding: 58px;
   }
 }

@@ -33,10 +33,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:
-    "Poppins" Arial,
-    Helvetica,
-    sans-serif;
+  font-family: "Poppins" Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -182,11 +179,13 @@ a {
 .navbar-brand {
   font-size: var(--fs-2) !important;
   font-weight: var(--fw-700);
+  margin-left: 10px;
 }
 
 .navbar-toggler {
   background-color: var(--primary-color) !important;
   font-size: 2rem;
+  margin-right: 10px;
 }
 
 header nav a {
@@ -296,7 +295,7 @@ header ul li a {
 .img-box {
   position: relative;
   width: 300px;
-  height: 410px;
+  height: 400px;
 }
 
 .image {
@@ -502,7 +501,7 @@ h2 span {
 .project-card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   border-radius: var(--radius-8);
   overflow: hidden;
 }
@@ -510,8 +509,8 @@ h2 span {
 .work-list {
   display: grid;
   text-align: center;
-  gap: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  gap: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .work p {

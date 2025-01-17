@@ -78,20 +78,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
   function startTextAnimation(i) {
-    const setText = [
-      "Web Developer ",
-      "UI/UX Designer ",
-      "SEO Specialist ",
-      "Web Designer ",
-      "Programmer ",
-      "AI Enthusiast ",
-      "Freelancer ",
-    ];
+    const setText = ["Full-Stack Web Developer "];
 
     if (typeof setText[i] == "undefined") {
       setTimeout(function () {
         startTextAnimation(0);
-      }, 2000);
+      }, 5000);
     }
 
     if (setText && setText[i] && i < setText[i].length) {
@@ -146,7 +138,7 @@ function sendMail() {
     function (err) {
       btn.value = "Send Message";
       alert("Failed", err);
-    },
+    }
   );
 }
 

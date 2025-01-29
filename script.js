@@ -40,60 +40,31 @@ window.onscroll = () => {
   });
 };
 
-// Scroll reveal
+// Scroll reveal with Intersection Observer
 const revealElements = document.querySelectorAll("[data-reveal]");
 const revealDelayElements = document.querySelectorAll("[data-reveal-delay]");
 
-const reveal = function () {
-  for (let i = 0, len = revealElements.length; i < len; i++) {
-    if (
-      revealElements[i].getBoundingClientRect().top <
-      window.innerHeight / 1.2
-    ) {
-      revealElements[i].classList.add("revealed");
+const revealCallback = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("revealed");
     }
-  }
+  });
 };
 
-for (let i = 0, len = revealDelayElements.length; i < len; i++) {
-  revealDelayElements[i].style.transitionDelay =
-    revealDelayElements[i].dataset.revealDelay;
-}
+const revealObserver = new IntersectionObserver(revealCallback, {
+  threshold: 0.2, // 20% of the element needs to be visible
+  rootMargin: "0px",
+});
 
-window.addEventListener("scroll", reveal);
-window.addEventListener("load", reveal);
+// Set up delays and observe elements
+revealElements.forEach((element) => {
+  revealObserver.observe(element);
+});
 
-// typewriter animation
-document.addEventListener("DOMContentLoaded", function (event) {
-  function typeTextAnimation(text, i, callbackFunc) {
-    if (i < text.length) {
-      document.querySelector(".role").innerHTML =
-        text.substring(0, i, 1) + "<span aria-hidden=true></span>";
-      setTimeout(function () {
-        typeTextAnimation(text, i + 1, callbackFunc);
-      }, 100);
-    } else if (typeof callbackFunc == "function") {
-      setTimeout(callbackFunc, 700);
-    }
-  }
-
-  function startTextAnimation(i) {
-    const setText = ["Full-Stack Web Developer "];
-
-    if (typeof setText[i] == "undefined") {
-      setTimeout(function () {
-        startTextAnimation(0);
-      }, 5000);
-    }
-
-    if (setText && setText[i] && i < setText[i].length) {
-      typeTextAnimation(setText[i], 0, function () {
-        startTextAnimation(i + 1);
-      });
-    }
-  }
-
-  startTextAnimation(0);
+revealDelayElements.forEach((element) => {
+  element.style.transitionDelay = element.dataset.revealDelay;
+  revealObserver.observe(element);
 });
 
 // skill section

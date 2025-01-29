@@ -67,8 +67,9 @@ body {
 
 /* reused code */
 .container {
-  padding-top: 50px;
+  width: 100%;
   padding-inline: 15px;
+  margin: 0 auto;
 }
 
 .title-1 {
@@ -266,6 +267,7 @@ header ul li a {
 
 .hero-info {
   flex-basis: 63%;
+  margin-top: 60px;
 }
 
 .hire .hire1 {
@@ -314,12 +316,6 @@ h2 span {
   animation-name: RoleAnimate 1s steps(1);
 }
 
-@keyframes RoleAnimate {
-  50% {
-    border-color: transparent;
-  }
-}
-
 /* social media */
 .wrapper {
   display: inline-flex;
@@ -329,25 +325,26 @@ h2 span {
 
 .wrapper .icon {
   position: relative;
-  background: #ffe;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
   border-radius: 50%;
   padding: 14px;
   margin: 10px;
-  width: 45px;
-  height: 45px;
-  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .wrapper .icon i {
-  font-size: var(--fs-3);
-  color: var(--secondary-color);
+  font-size: var(--fs-2);
+  color: #ffffff;
 }
 
 .wrapper .github:hover {
@@ -363,6 +360,11 @@ h2 span {
 .wrapper .twitter:hover {
   background: var(--primary-color);
   color: #ffffff;
+}
+
+.wrapper .icon:hover {
+  transform: translateY(-5px);
+  background: var(--primary-color);
 }
 
 /* About section */
@@ -390,7 +392,16 @@ h2 span {
 
 /* Services section */
 .about-service {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .about-service h3 {
@@ -417,9 +428,9 @@ h2 span {
 
 .services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
 /* Skills */
@@ -504,6 +515,12 @@ h2 span {
   gap: 10px;
   border-radius: var(--radius-8);
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .work-list {

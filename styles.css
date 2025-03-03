@@ -396,7 +396,7 @@ h2 span {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-radius: 16px;
-  padding: 2rem;
+  padding: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -410,7 +410,7 @@ h2 span {
 }
 
 .about-service p {
-  margin-left: 20px;
+  text-align: center;
 }
 
 .about-service .title-3 {
@@ -618,6 +618,9 @@ textarea.input {
 
 /* footer */
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-block: 10px;
   text-align: center;
 }
@@ -650,6 +653,10 @@ textarea.input {
   .contact {
     padding: 68px;
   }
+
+  .skillContainer {
+    width: 380px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -674,6 +681,10 @@ textarea.input {
 
   .contact .section-text {
     font-size: 1.8rem;
+  }
+
+  .skillContainer {
+    width: 380px;
   }
 }
 
@@ -714,6 +725,10 @@ textarea.input {
     align-items: center;
     gap: 90px;
   }
+
+  .skillContainer {
+    width: auto;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -741,6 +756,10 @@ textarea.input {
   .contact {
     gap: 150px;
   }
+
+  .skillContainer {
+    width: auto;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -754,5 +773,9 @@ textarea.input {
 
   .project-card {
     padding: 58px;
+  }
+
+  .skillContainer {
+    width: auto;
   }
 }

@@ -72,6 +72,10 @@ body {
   margin: 0 auto;
 }
 
+img:hover {
+  cursor: pointer;
+}
+
 .title-1 {
   color: var(--white);
   font-size: var(--fs-1);
@@ -194,8 +198,8 @@ header nav a {
   border-radius: 5px;
 }
 
-header nav a:hover,
-header nav a.active {
+.nav-link:hover,
+.nav-link.active {
   background: var(--primary-color);
   transition: 0.5s ease-out;
   letter-spacing: 2px;
@@ -295,19 +299,16 @@ header ul li a {
 }
 
 .img-box {
-  position: relative;
-  width: 300px;
-  height: 400px;
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
 }
 
-.image {
-  position: absolute;
-  top: 0;
-  left: 0;
+.heroImage {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 /* Animation typewriter*/
@@ -319,7 +320,7 @@ h2 span {
 /* social media */
 .wrapper {
   display: inline-flex;
-  gap: 5px;
+  gap: 3px;
   list-style: none;
 }
 
@@ -328,11 +329,11 @@ h2 span {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-radius: 50%;
-  padding: 14px;
+  padding: 10px;
   margin: 10px;
-  width: 60px;
-  height: 60px;
-  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -434,74 +435,46 @@ h2 span {
 }
 
 /* Skills */
+.skillContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--secondary-color);
+  width: auto;
+  height: auto;
+  padding: 10px 5px;
+  gap: 10px;
+  box-shadow: 0 5px 5px var(--primary-color);
+}
+
+.skillSet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 105px;
+  height: auto;
+  margin: 5px;
+  background-color: #130c24;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.skillSet:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+.skillSet p {
+  font-size: var(--fs-8);
+  font-weight: var(--fw-700);
+}
+
 .development {
   margin: 30px;
-}
-
-.progress-list .progress-item .progress1 .progress-fill {
-  background-color: var(--primary-color);
-  width: 0;
-  transition: width 2s;
-}
-
-.progress-name abbr[title] {
-  text-decoration: none;
-  border-bottom: none;
-}
-
-.progress-list {
-  position: relative;
-  margin-bottom: 15px;
-}
-
-.progress-list .progress-item {
-  display: inline-block;
-  margin-top: 10px;
-  width: 100%;
-  vertical-align: middle;
-}
-
-.progress-list .progress-item .label-wrapper {
-  position: relative;
-}
-
-.progress-list .progress-item .label-wrapper .progress-name {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: var(--fs-4);
-  font-weight: 600;
-  opacity: 0.9;
-}
-
-.progress-list .progress-item .label-wrapper .percentage {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: var(--fs-4);
-  font-weight: normal;
-}
-
-.progress-list .progress-item .progress1 {
-  position: relative;
-  width: 100%;
-  height: 8px;
-  margin: 30px 0 5px;
-  border-radius: 10px;
-  background: #130c24;
-}
-
-.progress-list .progress-item .progress-fill {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 8px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  transition: 3s all;
 }
 
 /* Projects section */
@@ -636,6 +609,13 @@ textarea.input {
   margin-bottom: 5px;
 }
 
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
 /* footer */
 .footer {
   padding-block: 10px;
@@ -660,7 +640,7 @@ textarea.input {
   }
 
   .img-box {
-    margin-left: 50px;
+    margin-left: 80px;
   }
 
   .project-card {
@@ -682,7 +662,10 @@ textarea.input {
   }
 
   .img-box {
-    margin-left: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .project-card {
@@ -746,10 +729,9 @@ textarea.input {
   }
 
   .img-box {
-    position: relative;
-    width: 270px;
-    height: 370px;
-    margin-left: 0;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
   }
 
   .project-card {

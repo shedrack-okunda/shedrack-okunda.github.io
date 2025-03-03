@@ -72,6 +72,10 @@ body {
   margin: 0 auto;
 }
 
+img:hover {
+  cursor: pointer;
+}
+
 .title-1 {
   color: var(--white);
   font-size: var(--fs-1);
@@ -187,10 +191,6 @@ a {
   background-color: var(--primary-color) !important;
   font-size: 2rem;
   margin-right: 10px;
-}
-
-.emoji {
-  margin-right: 50px;
 }
 
 header nav a {
@@ -320,7 +320,7 @@ h2 span {
 /* social media */
 .wrapper {
   display: inline-flex;
-  gap: 5px;
+  gap: 3px;
   list-style: none;
 }
 
@@ -329,11 +329,11 @@ h2 span {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-radius: 50%;
-  padding: 14px;
+  padding: 10px;
   margin: 10px;
-  width: 60px;
-  height: 60px;
-  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -607,6 +607,13 @@ textarea.input {
 }
 .hire-subtitle {
   margin-bottom: 5px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }
 
 /* footer */

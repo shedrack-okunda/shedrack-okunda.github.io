@@ -19,6 +19,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // navbar
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menu-toggle");
+  const sidebar = document.getElementById("sidebar");
+  const closeBtn = document.getElementById("close-btn");
+
+  // open sidebar
+  menuToggle.addEventListener("click", () => {
+    sidebar.classList.add("active");
+  });
+
+  // close sidebar
+  closeBtn.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+  });
+});
+
 const section = document.querySelectorAll("section");
 const menu = document.querySelectorAll("nav ul li a");
 

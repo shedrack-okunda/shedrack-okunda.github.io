@@ -5,7 +5,11 @@ This repository hosts the source code for my portfolio website, showcasing my sk
 
 ## Description
 
-This portfolio highlights my journey as a web developer, featuring my various projects I've worked on, my skills, and a brief introduction about myself.
+In this portfolio, you will find:
+
+- **Skills**: A comprehensive list of my technical skills, including programming languages, frameworks, and tools I am proficient in.
+- **Projects**: A selection of my best work, complete with descriptions, technologies used, and links to live demos or GitHub repositories.
+- **Experience**: An overview of my professional background, including internships, freelance work, and any relevant education.
 
 ## Technologies Used
 
@@ -15,7 +19,14 @@ This portfolio highlights my journey as a web developer, featuring my various pr
 
 ## Features
 
-- Hero Section: A visually appealing introduction to my portfolio.
-- About Section: Information about my background and skills.
-- Projects Section: A showcase of my work and projects.
-- Contact Section: A way for potential employers or collaborators to reach out.
+- **Responsive Design**: The website is fully responsive and looks great on all devices.
+- **User -Friendly Navigation**: Easy-to-use navigation to help visitors find information quickly.
+- **Contact Form**: A simple contact form that allows potential employers or collaborators to reach out to me directly.
+
+## Getting Started
+
+You can view my live portfolio at
+
+```bash
+https://shedrack-okunda.github.io/
+```

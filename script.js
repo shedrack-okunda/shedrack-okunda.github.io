@@ -83,31 +83,6 @@ revealDelayElements.forEach((element) => {
   revealObserver.observe(element);
 });
 
-// skill section
-function isInViewport(element) {
-  const rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
-
-function animateSkillBars() {
-  document.querySelectorAll(".progress-fill").forEach(function (bar) {
-    if (isInViewport(bar)) {
-      const skillLevel = bar.getAttribute("data-skill-level");
-      bar.style.width = skillLevel;
-    }
-  });
-}
-
-window.addEventListener("scroll", animateSkillBars);
-
-window.addEventListener("load", animateSkillBars);
-
 // contact form email js
 const btn = document.getElementById("button");
 
@@ -117,7 +92,7 @@ function sendMail() {
     email_id: document.getElementById("hire-email").value,
     message: document.getElementById("hire-message").value,
   };
-  emailjs.send("service_2vf4yad", "template_h1no3ni", params).then(
+  emailjs.send("service_zeibaco", "template_h1no3ni", params).then(
     function (response) {
       btn.value = "Send Message";
       alert("Success!", response);

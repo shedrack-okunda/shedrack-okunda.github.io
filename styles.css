@@ -102,6 +102,10 @@ a {
   display: block;
 }
 
+i {
+  font-size: var(--fs-4);
+}
+
 .layout-section {
   scroll-margin-top: 70px;
 }
@@ -477,9 +481,22 @@ header {
   margin-bottom: 20px;
 }
 
+.work-list .title-3 {
+  margin-block: 10px 10px;
+  font-size: var(--fs-3);
+}
+
+.work-list {
+  display: grid;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 50px;
+}
+
 .project-card {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   border-radius: var(--radius-8);
   overflow: hidden;
@@ -491,27 +508,15 @@ header {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.work-list {
-  display: grid;
-  gap: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  margin-bottom: 50px;
-}
-
-.work-list .title-3 {
-  margin-block: 10px 10px;
-  font-size: var(--fs-4);
-}
-
 .work img {
   height: auto;
   width: 100%;
   border-radius: 10px;
 }
 
-.work-list .work a {
+.work a {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 /* Contact section */
@@ -662,7 +667,7 @@ textarea.input {
   }
 
   .title-2 {
-    font-size: var(--fs-4);
+    font-size: var(--fs-3);
   }
 
   .title-3 {

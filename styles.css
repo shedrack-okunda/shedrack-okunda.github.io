@@ -399,6 +399,10 @@ header {
   color: var(--primary-color);
 }
 
+.institution .section-text {
+  margin: 5px;
+}
+
 /* Experience Section */
 .experience-item {
   margin: 20px;
@@ -416,6 +420,7 @@ header {
   display: flex;
   align-items: flex-start;
   margin-bottom: 10px;
+  margin: 10px;
   font-size: var(--fs-5);
 }
 

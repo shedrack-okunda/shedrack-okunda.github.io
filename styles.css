@@ -14,7 +14,7 @@
   --fs-4: calc(1.6rem + 0.24vw);
   --fs-5: calc(1.5rem + 0.24vw);
   --fs-6: calc(1.4rem + 0.24vw);
-  --fs-7: calc(1.2rem);
+  --fs-7: calc(1.1rem + 0.33vw);
   --fs-8: calc(1.1rem + 0.63vw);
 
   --fw-700: 700;
@@ -109,7 +109,7 @@ i {
 
 .layout-section {
   scroll-margin-top: 85px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .section-text i {
@@ -137,13 +137,14 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
+  box-shadow: 1px 3px var(--primary-color);
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 5px;
   background-color: var(--secondary-color);
 }
 
@@ -156,18 +157,6 @@ header {
 
 .navbar-icon {
   cursor: pointer;
-}
-
-.navbar-toggler {
-  font-size: var(--fs-4);
-  color: var(--text-color);
-  border-radius: 2px;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-.navbar-toggler:hover {
-  color: var(--primary-color);
 }
 
 .navbar-links {
@@ -316,17 +305,12 @@ header {
 }
 
 /* About section */
-#about {
-  margin-top: 50px;
-}
-
 .about {
-  margin-top: 20px;
   margin-bottom: 30px;
 }
 
 .about .section-text {
-  margin-bottom: 10px;
+  margin: 15px;
 }
 
 .call-to-action a {
@@ -346,10 +330,15 @@ header {
 
 .institution .title-3 {
   color: var(--primary-color);
+  font-size: var(--fs-4);
 }
 
 .institution .section-text {
   margin: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: inset 0 1px 10px var(--primary-color);
+  font-size: var(--fs-7);
 }
 
 /* Experience Section */
@@ -357,12 +346,24 @@ header {
   margin: 20px;
 }
 
+.experience-item .section-text {
+  font-size: var(--fs-4);
+}
+
 .experience-item .title-3 {
   color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: var(--fs-4);
 }
 
 .experience-item ul {
   padding: 0;
+}
+
+.rb {
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: inset 0 2px 10px var(--primary-color);
 }
 
 .experience-item li {
@@ -370,7 +371,7 @@ header {
   align-items: flex-start;
   margin-bottom: 10px;
   margin: 10px;
-  font-size: var(--fs-5);
+  font-size: var(--fs-7);
 }
 
 .experience-item li i {
@@ -397,7 +398,7 @@ header {
 .about-service {
   background: var(--secondary-color);
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 1rem;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
   border: 1px solid var(--primary-color);
   box-shadow: 3px 3px var(--primary-color);
@@ -413,6 +414,7 @@ header {
   text-align: center;
   margin-top: 10px;
   font-size: var(--fs-4);
+  color: var(--primary-color);
 }
 
 .about-service .service-icon {
@@ -437,11 +439,10 @@ header {
   background-color: var(--secondary-color);
   width: 100%;
   height: auto;
-  padding: 5px 10px;
+  padding: 3px 5px;
   border-radius: 5px;
   border: 1px solid var(--primary-color);
-  gap: 2px;
-  box-shadow: 3px 3px var(--primary-color);
+  box-shadow: 1px 1px var(--primary-color);
 }
 
 .skillSet {
@@ -452,12 +453,12 @@ header {
   width: 100px;
   height: auto;
   margin: 5px;
-  background-color: #130c24;
-  border: 1px solid var(--primary-color);
-  border-radius: 3px;
   padding: 5px;
+  background-color: #130c24;
+  border-radius: 5px;
   transition: transform 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
+  box-shadow: inset 0 1px 10px var(--primary-color);
 }
 
 .skillSet:hover {
@@ -468,7 +469,6 @@ header {
 
 .skillSet p {
   font-size: var(--fs-7);
-  font-weight: var(--fw-700);
 }
 
 /* Projects section */
@@ -480,6 +480,7 @@ header {
 .work-list .title-3 {
   margin-block: 10px 10px;
   font-size: var(--fs-3);
+  color: var(--primary-color);
 }
 
 .work-list {
@@ -752,8 +753,12 @@ textarea.input {
     font-size: var(--fs-4);
   }
 
-  .experience-item li {
+  .about .section-text {
     font-size: var(--fs-4);
+  }
+
+  .experience-item li {
+    font-size: var(--fs-5);
   }
 
   .experience-item li i {

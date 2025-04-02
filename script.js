@@ -1,23 +1,3 @@
-// Scroll Arrow
-document.addEventListener("DOMContentLoaded", function () {
-  const scrollArrow = document.getElementById("scrollArrow");
-  let lastScrollTop = 0;
-
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 200) {
-      scrollArrow.style.display = "block";
-    } else {
-      scrollArrow.style.display = "none";
-    }
-  });
-
-  scrollArrow.addEventListener("click", function () {
-    if (window.scrollY > 0) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  });
-});
-
 // navbar
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menu-toggle");

@@ -10,7 +10,7 @@
 
   --fs-1: calc(2rem + 1.35vw);
   --fs-2: calc(2rem + 0.63vw);
-  --fs-3: calc(2.3rem + 0.24vw);
+  --fs-3: calc(1.8rem + 0.63vw);
   --fs-4: calc(1.6rem + 0.24vw);
   --fs-5: calc(1.5rem + 0.24vw);
   --fs-6: calc(1.4rem + 0.24vw);
@@ -68,7 +68,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Montserrat", sans-serif; /* or your chosen heading font */
+  font-family: "Montserrat", sans-serif;
   color: var(--text-color);
   line-height: 1.3;
 }
@@ -108,7 +108,8 @@ i {
 }
 
 .layout-section {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 85px;
+  margin-bottom: 50px;
 }
 
 .section-text i {
@@ -191,58 +192,6 @@ header {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 5px;
-}
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: -200px;
-  width: 200px;
-  height: 100%;
-  background-color: var(--secondary-color);
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-  transition: left 0.3s ease;
-  z-index: 999;
-}
-
-.sidebar ul {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.sidebar ul li {
-  margin: 15px 0;
-}
-
-.sidebar ul li a {
-  color: var(--text-color);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-700);
-  padding: 5px 10px;
-}
-
-.sidebar ul li a:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border-radius: 5px;
-}
-
-.close-btn {
-  font-size: var(--fs-4);
-  color: var(--text-color);
-  cursor: pointer;
-  text-align: right;
-  padding: 10px;
-}
-
-.close-btn:hover {
-  color: var(--primary-color);
-}
-
-.sidebar.active {
-  left: 0;
 }
 
 .navbar-brand::first-letter {
@@ -426,7 +375,7 @@ header {
 
 .experience-item li i {
   margin-right: 10px;
- margin-top: 5px;
+  margin-top: 5px;
   font-size: var(--fs-5);
   color: var(--primary-color);
   flex-shrink: 0;
@@ -668,8 +617,42 @@ textarea.input {
 }
 
 /* footer */
+.bottom-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: var(--secondary-color);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.bottom-navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.bottom-navbar ul li a {
+  color: var(--primary-color);
+  padding: 8px;
+}
+
+.bottom-navbar ul li a i {
+  font-size: var(--fs-3);
+}
+
+.bottom-navbar ul li a:hover {
+  transform: scale(1.08);
+}
+
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-block: 10px;
@@ -709,21 +692,17 @@ textarea.input {
   :root {
     --fs-1: calc(1.7rem + 2vw);
     --fs-2: calc(1.5rem + 1.5vw);
-    --fs-3: calc(2.1rem + 0.5vw);
+    --fs-3: calc(1.7rem + 0.5vw);
     --fs-4: calc(1.5rem + 0.3vw);
     --fs-5: calc(1.3rem + 0.2vw);
   }
 
+  .bottom-navbar ul li a i {
+    font-size: var(--fs-3);
+  }
+
   .navbar-links {
     display: none; /* Hide navbar links on small screens */
-  }
-
-  .sidebar {
-    display: block; /* Show sidebar on small screens */
-  }
-
-  .navbar-toggler {
-    display: block; /* Show hamburger icon on small screens */
   }
 
   .title-2 {
@@ -777,20 +756,20 @@ textarea.input {
     font-size: var(--fs-4);
   }
 
-    .experience-item li i {
+  .experience-item li i {
     font-size: var(--fs-4);
+  }
+
+  .bottom-navbar {
+    display: flex;
+  }
+
+  .footer .copyright {
+    display: none;
   }
 }
 
 @media (min-width: 768px) {
-  .sidebar {
-    display: none;
-  }
-
-  .navbar-toggler {
-    display: none;
-  }
-
   .navbar-links {
     display: flex;
   }
@@ -812,6 +791,14 @@ textarea.input {
 
   .contact .section-text {
     font-size: 1.8rem;
+  }
+
+  .bottom-navbar {
+    display: none;
+  }
+
+  .footer .copyright {
+    display: block;
   }
 }
 
@@ -932,29 +919,4 @@ textarea.input {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(0, 0%, 70%);
-}
-
-/* Scroll Arrow */
-.scroll-arrow {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  font-size: var(--fs-2);
-  font-weight: var(--fw-700);
-  border-radius: 10px;
-  cursor: pointer;
-  display: none;
-  transition: right 0.5s ease-in-out;
-  box-shadow: 0 5px rgba(0, 0, 0, 0.4);
-  z-index: 1000;
-}
-
-.scroll-arrow:hover {
-  transform: scale(1.05);
 }

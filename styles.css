@@ -483,27 +483,16 @@ header {
   color: var(--primary-color);
 }
 
-.work-list {
-  display: grid;
-  gap: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  margin-bottom: 50px;
-}
-
 .project-icon {
   margin-right: 50px;
   font-size: var(--fs-4);
 }
 
-.project-icon:hover {
-  color: var(--primary-color);
-}
-
 .project-card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   border-radius: var(--radius-8);
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -516,14 +505,23 @@ header {
 
 .work img {
   height: auto;
-  width: 100%;
+  width: 500px;
   border-radius: 10px;
 }
 
-.work a {
-  text-align: center;
+.project-btn {
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: transform 0.3s ease;
   margin-top: 30px;
 }
+
+.project-btn:hover {
+transform: scale(1.08);}
 
 /* Contact section */
 .contact-info .title-3 {
@@ -703,7 +701,7 @@ textarea.input {
   }
 
   .navbar-links {
-    display: none; /* Hide navbar links on small screens */
+    display: none;
   }
 
   .title-2 {

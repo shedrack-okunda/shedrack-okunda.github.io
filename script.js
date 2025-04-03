@@ -9,7 +9,7 @@ window.onscroll = () => {
     const height = section.offsetHeight;
     const id = section.getAttribute("id");
 
-    // Activate the current menu link based on scroll position
+    // Highlight menu link based on scroll position
     if (top >= offset && top < offset + height) {
       menuLinks.forEach((link) => {
         link.classList.remove("active");
@@ -56,15 +56,19 @@ const sendMail = () => {
     message: document.getElementById("contactForm-message").value,
   };
 
+  emailjs.init("GWAMJbKrViJUW6pM6");
+
   emailjs
     .send("service_zeibaco", "template_h1no3ni", params)
     .then((response) => {
       btn.value = "Send Message";
-      alert("Message sent Successfully!", response);
+      document.getElementById("form-status").textContent =
+        "Message sent successfully!";
     })
     .catch((err) => {
       btn.value = "Send Message";
-      alert("Failed to Send Message", err);
+      document.getElementById("form-status").textContent =
+        "Failed to send message. Please try again.";
     });
 };
 

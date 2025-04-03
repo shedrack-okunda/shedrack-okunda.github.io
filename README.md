@@ -1,13 +1,8 @@
-# My Personal Portfolio
-
-Welcome to my personal portfolio website!
-This repository hosts the source code for my portfolio website, showcasing my skills, projects and experience as a web developer.
-
-## Description
-
 # Welcome to My Personal Portfolio Website
 
 This repository contains the source code for my personal portfolio website, where I showcase my skills, projects, and experience as a web developer.
+
+## About This Project
 
 In this portfolio, you will find:
 

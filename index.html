@@ -13,7 +13,16 @@
       name="description"
       content="I develop intuitive web application solutions."
     />
-    <title>Shedrack 🌐 || Full-Stack Developer</title>
+    <meta name="robots" content="index, follow" />
+    <title>Shedrack || Full-Stack Developer</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="styles.css" />
@@ -22,11 +31,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Montserrat&display=swap"
       rel="stylesheet"
     />
 
-    <!-- fontawesome cdn -->
+    <!-- font awesome cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -34,68 +43,44 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <!-- Bootstrap link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-    />
   </head>
 
   <body>
-    <!-- Scroll Arrow -->
-    <div class="scroll-arrow" id="scrollArrow">&#8593;</div>
-
     <!-- Header section -->
     <header>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-        <div class="container">
-          <a class="navbar-brand fst-italic fw-bold" href="#home">Shedrack</a>
+      <nav>
+        <div class="navbar">
+          <a class="navbar-brand" href="#home">Sheddy</a>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <img
+            width="60"
+            height="60"
+            class="navbar-icon"
+            src="https://img.icons8.com/external-filled-color-icons-papa-vector/78/external-Developer-coding-filled-color-icons-papa-vector-2.png"
+            alt="external-Developer-coding-filled-color-icons-papa-vector-2"
+          />
 
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacts">Contacts</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="navbar-links" id="navbar-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
         </div>
       </nav>
     </header>
 
     <main>
       <!-- Home section -->
-      <section class="hero layout-section" id="home">
+      <section
+        class="hero layout-section"
+        id="home"
+        tabindex="0"
+        aria-label="Home Section"
+      >
         <div class="container">
           <div class="home">
             <div class="img-box">
@@ -108,46 +93,49 @@
               />
             </div>
 
-            <div class="hero-info">
+            <div class="hero-section">
               <h1 class="title-1" data-reveal="top" data-reveal-delay="0.25s">
                 Hello, I'm
                 <span class="title">Shedrack</span>
               </h1>
 
-              <div class="anime">
-                <h3 class="title-2" data-reveal="top" data-reveal-delay="0.5s">
-                  Full-Stack Web Developer.
-                </h3>
-              </div>
+              <h3 class="title-2" data-reveal="top" data-reveal-delay="0.5s">
+                Full-Stack Web Developer.
+              </h3>
 
               <p
                 class="section-text"
                 data-reveal="top"
                 data-reveal-delay="0.75s"
               >
-                I'm a Full-Stack Web Developer based in Kenya who brings new
-                ideas to life using the newest technologies. I also create
-                execeptional and accessible digital experiences for the web as
-                well as software solutions.
+                I'm a Full-Stack Web Developer based in Kenya, passionate about
+                bringing innovative ideas to life using the latest web
+                technologies. I specialize in creating exceptional and
+                accessible digital experiences, as well as tailored software
+                solutions.
               </p>
 
-              <div class="hire" data-reveal="top" data-reveal-delay="1s">
+              <div
+                class="hero-buttons"
+                data-reveal="top"
+                data-reveal-delay="1s"
+              >
+                <a
+                  href="mailto:okundashedrack@gmail.com"
+                  class="call-to-action"
+                  type="button"
+                >
+                  Hire Me!
+                </a>
+
                 <a
                   href="files/SHEDRACK OKUNDA-CV.pdf"
                   type="button"
-                  class="btn btn-warning hire1"
+                  class="cv-button"
                   download=""
                 >
                   View Resume
                   <i class="fa fa-download"></i>
-                </a>
-
-                <a
-                  href="mailto:okundashedrack@gmail.com"
-                  class="btn btn-outline-warning hire1"
-                  type="button"
-                >
-                  Hire Me!
                 </a>
               </div>
 
@@ -159,6 +147,7 @@
                         href="https://github.com/shedrack-okunda"
                         class="social-link"
                         aria-label="github"
+                        target="_blank"
                         ><i class="fab fa-github"></i
                       ></a>
                     </span>
@@ -170,6 +159,7 @@
                         href="https://www.linkedin.com/in/shedrack-okunda"
                         class="social-link"
                         aria-label="linkedin"
+                        target="_blank"
                         ><i class="fab fa-linkedin"></i
                       ></a>
                     </span>
@@ -180,6 +170,7 @@
                       <a
                         href="https://twitter.com/sheddyke_"
                         class="social-link"
+                        target="_blank"
                         aria-label="x-twitter"
                         ><i class="fab fa-x-twitter"></i
                       ></a>
@@ -193,47 +184,218 @@
       </section>
 
       <!-- About section -->
-      <section id="about" class="layout-section about">
+      <section
+        id="about"
+        class="layout-section about"
+        tabindex="0"
+        aria-label="About Section"
+      >
         <div class="container">
           <h2 class="title-2" data-reveal="left">Who is Shedrack</h2>
           <div class="about" data-reveal="left">
             <p class="section-text">
-              A passionate web Developer who loves creating clean and effective
-              web interfaces. I love converting tricky problems into simple,
-              elegant and intuitive designs. I build beautiful, user-friendly
-              and responsive websites.
+              Hello! I'm Shedrack, a passionate Full-Stack Web Developer based
+              in Kenya. My journey in web development began with a fascination
+              for technology and a desire to create impactful digital
+              experiences. I thrive on turning complex challenges into simple,
+              elegant, and intuitive designs that resonate with users. I am
+              particularly passionate about exploring new technologies in web
+              development and design, and I enjoy participating in hackathons
+              and contributing to open-source projects. My interests also
+              include learning about AI and its applications in web development.
             </p>
 
             <p class="section-text">
-              Having a solid background in HTML, CSS, JavaScript, React,
-              Node.js, Express.js and MongoDB, I specialize in creating
-              responsive and accessible websites with a seamless user
-              experience. My aim is to create code that not only works but is
-              also easy to maintain, extend and debug.
-            </p>
-
-            <p class="section-text">
-              I look to create sites that not just meet but exceed client
-              expectations. Whether it is optimizing a page for speed, keywords,
-              making cross-browser compatible or incorporating the newest
-              standards and technologies.
+              With a solid background in HTML, CSS, JavaScript, React, Node.js,
+              and Express.js, I specialize in crafting responsive and accessible
+              websites that provide seamless user experiences. My goal is to
+              write code that not only functions effectively but is also easy to
+              maintain, extend, and debug. I am driven by the desire to exceed
+              client expectations, whether it's optimizing a page for speed,
+              ensuring cross-browser compatibility, or incorporating the latest
+              standards and technologies. I believe that every project is an
+              opportunity to learn and grow, and I am committed to delivering
+              high-quality work that makes a difference.
             </p>
           </div>
 
-          <div class="callAction" data-reveal="top" data-reveal-delay="0.75s">
-            <a
-              href="tel:+254720260412"
-              type="button"
-              class="btn btn-outline-warning hire1"
-              download=""
+          <div
+            class="call-to-action"
+            data-reveal="top"
+            data-reveal-delay="0.75s"
+          >
+            <a href="tel:+254720260412" type="button" class="btn" download=""
               >Contact Me!</a
             >
           </div>
         </div>
       </section>
 
+      <!-- Education section -->
+      <section
+        id="education"
+        class="layout-section education"
+        tabindex="0"
+        aria-label="Educational Background"
+      >
+        <div class="container">
+          <h2 class="title-2" data-reveal="left">Educational Background</h2>
+
+          <div class="edu" data-reveal="right">
+            <div class="institution">
+              <h3 class="title-3">Web Development Bootcamp</h3>
+              <p class="section-text">
+                <strong>Power Learn Project Academy</strong> | February 2025 -
+                Present
+              </p>
+            </div>
+
+            <div class="institution">
+              <h3 class="title-3">Artificial Intelligence</h3>
+              <p class="section-text">
+                <strong>ALX Africa</strong> | May 2024 - July 2024
+              </p>
+            </div>
+
+            <div class="institution">
+              <h3 class="title-3">Information and Communication Technology</h3>
+              <p class="section-text">
+                <strong>Eldoret Technical Training Institute</strong> | January
+                2022 - Present
+              </p>
+            </div>
+          </div>
+
+          <div class="hero-buttons" data-reveal="top" data-reveal-delay="1s">
+            <a
+              href="files/SHEDRACK OKUNDA-CV.pdf"
+              type="button"
+              class="cv-button"
+              download
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience section -->
+      <section
+        id="experience"
+        class="layout-section experience"
+        tabindex="0"
+        aria-label="Work Experience"
+      >
+        <div class="container">
+          <h2 class="title-2" data-reveal="left">Work Experience</h2>
+
+          <div class="experience-container">
+            <div
+              class="experience-item"
+              data-reveal="left"
+              data-reveal-delay="0.25s"
+            >
+              <h3 class="title-3">Web Developer Intern</h3>
+              <div class="rb">
+                <p class="section-text">
+                  <strong>Riverbank Solutions</strong> | September 2024 -
+                  January 2025
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa fa-check-circle"></i>
+                    Assisted in the development of responsive web applications
+                    using HTML, CSS, and JavaScript.
+                  </li>
+
+                  <li>
+                    <i class="fa fa-check-circle"></i>
+                    Collaborated with designers to implement user-friendly
+                    interfaces and improve user experience.
+                  </li>
+
+                  <li>
+                    <i class="fa fa-check-circle"></i>
+                    Participated in code reviews and contributed to team
+                    discussions on best practices.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="experience-item"
+              data-reveal="left"
+              data-reveal-delay="0.5s"
+            >
+              <h3 class="title-3">Freelance Web Developer</h3>
+              <div class="rb">
+                <p class="section-text">
+                  <strong>Self-Employed</strong> | January 2023 - Present
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa fa-check-circle"></i>
+                    Developed and maintained websites for various clients,
+                    ensuring high performance and responsiveness.
+                  </li>
+
+                  <li>
+                    <i class="fa fa-check-circle"></i>
+                    Implemented SEO best practices to improve website visibility
+                    and user engagement.
+                  </li>
+
+                  <li>
+                    <i class="fa fa-check-circle"></i>
+                    Managed project timelines and client communications to
+                    ensure successful project delivery.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="experience-item"
+              data-reveal="left"
+              data-reveal-delay="0.75s"
+            >
+              <h3 class="title-3">Volunteer Developer</h3>
+              <div class="rb">
+                <p class="section-text">
+                  <strong>Edukit Non-Profit Organization</strong> | February
+                  2025 - Present
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa fa-check-circle"></i>
+                    Create a backend server to implement the logic for the
+                    organization website.
+                  </li>
+
+                  <li>
+                    <i class="fa fa-check-circle"></i>
+                    Working with a team to gather requirements and implement
+                    features based on user feedback.
+                  </li>
+
+                  <li>
+                    <i class="fa fa-check-circle"></i> Provide ongoing support
+                    and maintenance for the website.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Services section -->
-      <section id="services" class="layout-section">
+      <section
+        id="services"
+        class="layout-section"
+        tabindex="0"
+        aria-label="Services Section"
+      >
         <div class="container">
           <h2 class="title-2" data-reveal="left">What I do</h2>
           <div class="services-list">
@@ -308,35 +470,17 @@
                 between frontend and backend.
               </p>
             </div>
-
-            <div
-              class="about-service"
-              data-reveal="bottom"
-              data-reveal-delay="1s"
-            >
-              <div class="service-icon">
-                <img
-                  src="images/auth.svg"
-                  alt="Auth"
-                  width="60"
-                  height="auto"
-                  loading="lazy"
-                />
-              </div>
-
-              <h3 class="title-3">Authentication & Authorization</h3>
-              <p class="section-text">
-                I implement secure user authentication and authorization
-                protocols, like JWT, OAuth, and session management, to secure
-                your application from unauthorized access.
-              </p>
-            </div>
           </div>
         </div>
       </section>
 
       <!-- Skills section -->
-      <section id="skills" class="layout-section skills">
+      <section
+        id="skills"
+        class="layout-section skills"
+        tabindex="0"
+        aria-label="Skills Section"
+      >
         <div class="container">
           <h2 class="title-2" data-reveal="left">Skills</h2>
 
@@ -380,7 +524,7 @@
                   src="https://img.icons8.com/color/48/css3.png"
                   alt="css3"
                 />
-                <p>CSS</p>
+                <p>CSS3</p>
               </div>
 
               <div class="skillSet">
@@ -447,10 +591,10 @@
                 <img
                   width="48"
                   height="48"
-                  src="https://img.icons8.com/color/48/bootstrap--v2.png"
-                  alt="bootstrap--v2"
+                  src="https://img.icons8.com/color/48/python--v1.png"
+                  alt="python--v1"
                 />
-                <p>Bootstrap</p>
+                <p>Python</p>
               </div>
 
               <div class="skillSet">
@@ -487,10 +631,20 @@
                 <img
                   width="48"
                   height="48"
-                  src="https://img.icons8.com/fluency/48/docker.png"
-                  alt="docker"
+                  src="https://img.icons8.com/fluency/48/typescript--v1.png"
+                  alt="typescript--v1"
                 />
-                <p>Docker</p>
+                <p>TypeScript</p>
+              </div>
+
+              <div class="skillSet">
+                <img
+                  width="48"
+                  height="48"
+                  src="https://img.icons8.com/color/48/mysql-logo.png"
+                  alt="mysql-logo"
+                />
+                <p>MySQL</p>
               </div>
             </div>
           </div>
@@ -498,7 +652,12 @@
       </section>
 
       <!-- Projects section -->
-      <section id="projects" class="layout-section project">
+      <section
+        id="projects"
+        class="layout-section project"
+        tabindex="0"
+        aria-label="Project Section"
+      >
         <div class="container">
           <h2 class="title-2" data-reveal="top">My Work</h2>
 
@@ -510,60 +669,49 @@
           <div class="work-list">
             <div class="project-card">
               <div class="work" data-reveal="left">
-                <h4 class="title-3">Wallet App</h4>
+                <h4 class="title-3">
+                  To-do App <i class="fa-solid fa-list-check project-icon"></i>
+                </h4>
 
                 <p class="card-text section-text">
-                  A MERN Wallet App that keep tracks of transactions, accepts
-                  payments and can request payments
+                  The To-Do App is a user-friendly task management tool designed
+                  to help users organize their daily activities efficiently.
+                  With a clean and intuitive interface, this application allows
+                  users to easily add, manage, and track their tasks.
                 </p>
 
-                <img src="images/wallet.jpg" alt="wallet" />
-
-                <a
-                  href="https://github.com/shedrack-okunda/Wallet-App"
-                  target="_blank"
-                  class="link-warning"
-                  >Check It Out &rightarrow;</a
-                >
+                <div class="project-image">
+                  <img
+                    src="images/todo-list.png"
+                    alt="Todo List Screenshot"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-            </div>
-
-            <div class="project-card">
-              <div class="work" data-reveal="left">
-                <h4 class="title-3">To-do App</h4>
-
-                <p class="card-text section-text">
-                  A To-Do-App where you can add tasks, check and uncheck
-                  completed tasks. You can also delete completed tasks. Tasks
-                  can be saved even if the tab or the browser have been closed.
-                </p>
-
-                <img
-                  src="images/todo-list.png"
-                  alt="Todo List Screenshot"
-                  target="_blank"
-                  loading="lazy"
-                />
-
-                <a
-                  href="https://github.com/shedrack-okunda/To-Do-List"
-                  class="link-warning"
-                  >Check It Out &rightarrow;</a
-                >
-              </div>
+              <a
+                href="https://github.com/shedrack-okunda/To-Do-List"
+                class="project-btn"
+                target="_blank"
+                >Open Project on GitHub <i class="fab fa-github"></i
+              ></a>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Contacts section -->
-      <section id="contacts" class="layout-section contact-form">
+      <section
+        id="contacts"
+        class="layout-section contact-form"
+        tabindex="0"
+        aria-label="Contact Section"
+      >
         <div class="container">
           <h2 class="title-2" data-reveal="left">Contact Me</h2>
           <div class="contact-1">
             <div class="contact-info" data-reveal="left">
               <h4 class="title-3">Okunda Shedrack</h4>
-              <h3 class="fs-1">Full-Stack Web Developer</h3>
+              <h3>Full-Stack Web Developer</h3>
               <p class="section-text">
                 Whether you need a full-fledged e-commerce platform, a simple
                 personal blog, or a custom web app, I'm here to bring your ideas
@@ -579,26 +727,22 @@
               <div class="hire-line">
                 <div class="contacts">
                   <img
-                    width="48"
-                    height="48"
+                    width="35"
+                    height="35"
                     src="https://img.icons8.com/color/48/apple-phone.png"
                     alt="apple-phone"
                   />
-                  <a href="tel:+254720260412" class="hire-value">
-                    +2547 2026 0412</a
-                  >
+                  <a href="tel:+254720260412"> +2547 2026 0412</a>
                 </div>
-              </div>
 
-              <div class="hire-line">
                 <div class="contacts">
                   <img
-                    width="48"
-                    height="48"
+                    width="35"
+                    height="35"
                     src="https://img.icons8.com/color/48/gmail-new.png"
                     alt="gmail-new"
                   />
-                  <a href="mailto:okundashedrack@gmail.com" class="hire-value"
+                  <a href="mailto:okundashedrack@gmail.com"
                     >okundashedrack@gmail.com</a
                   >
                 </div>
@@ -641,7 +785,7 @@
               <div class="hire-action">
                 <input
                   type="submit"
-                  class="btn btn-outline-warning btn-form"
+                  class="btn"
                   id="button"
                   value="Send Message"
                   onclick="sendMail()"
@@ -655,6 +799,35 @@
 
     <!-- Footer section -->
     <footer class="footer">
+      <div class="bottom-navbar">
+        <ul>
+          <li>
+            <a href="#home"><i class="fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href="#about"><i class="fas fa-user"></i></a>
+          </li>
+          <li>
+            <a href="#education"><i class="fas fa-graduation-cap"></i></a>
+          </li>
+          <li>
+            <a href="#experience"><i class="fas fa-briefcase"></i></a>
+          </li>
+          <li>
+            <a href="#services"><i class="fas fa-cogs"></i></a>
+          </li>
+          <li>
+            <a href="#skills"><i class="fas fa-tools"></i></a>
+          </li>
+          <li>
+            <a href="#projects"><i class="fas fa-folder"></i></a>
+          </li>
+          <li>
+            <a href="#contacts"><i class="fas fa-envelope"></i></a>
+          </li>
+        </ul>
+      </div>
+
       <div class="container">
         <p class="copyright">
           Copyright &copy;
@@ -664,33 +837,11 @@
             height="24"
             src="https://img.icons8.com/emoji/48/man-technologyst.png"
             alt="man-technologyst"
-          />, All Rights Reserved.
+          />
+          All Rights Reserved.
         </p>
       </div>
     </footer>
-
-    <!-- jquery cdn -->
-    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js"></script>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- popper js cdn -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
-      integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
 
     <!-- external js -->
     <script src="script.js"></script>
@@ -704,11 +855,5 @@
     <script type="text/javascript">
       emailjs.init("GWAMJbKrViJUW6pM6");
     </script>
-
-    <!-- Add hover states for better interactivity -->
-    <style></style>
-
-    <!-- Add these at the end of body -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

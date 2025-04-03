@@ -477,10 +477,10 @@ header {
   margin-bottom: 20px;
 }
 
-.work-list .title-3 {
-  margin-block: 10px 10px;
+.project-card .title-3 {
   font-size: var(--fs-3);
   color: var(--primary-color);
+  text-align: center;
 }
 
 .project-icon {
@@ -495,6 +495,7 @@ header {
   align-items: center;
   border-radius: var(--radius-8);
   overflow: hidden;
+  padding: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -503,9 +504,14 @@ header {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.work img {
+.project-card .work {
+  margin: 20px;
+  padding: 10px;
+}
+
+.project-card .work img {
   height: auto;
-  width: 500px;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -517,11 +523,11 @@ header {
   border-radius: 5px;
   padding: 5px 10px;
   transition: transform 0.3s ease;
-  margin-top: 30px;
 }
 
 .project-btn:hover {
-transform: scale(1.08);}
+  transform: scale(1.08);
+}
 
 /* Contact section */
 .contact-info .title-3 {
@@ -678,10 +684,6 @@ textarea.input {
     gap: 30px;
   }
 
-  .project-card {
-    padding: 58px;
-  }
-
   .contact {
     padding: 65px;
   }
@@ -751,10 +753,6 @@ textarea.input {
     font-size: var(--fs-4);
   }
 
-  .about .section-text {
-    font-size: var(--fs-4);
-  }
-
   .experience-item li {
     font-size: var(--fs-5);
   }
@@ -786,10 +784,6 @@ textarea.input {
 
   .section-text {
     font-size: 2rem;
-  }
-
-  .project-card {
-    padding: 58px;
   }
 
   .contact .section-text {
@@ -830,15 +824,6 @@ textarea.input {
     justify-content: flex-start;
   }
 
-  .project-card {
-    padding: 58px;
-  }
-
-  .project .work-list {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 50px;
-  }
-
   .contact {
     grid-template-columns: 0.9fr 1fr;
     align-items: center;
@@ -858,26 +843,14 @@ textarea.input {
     align-items: center;
   }
 
-  .project-card {
-    padding: 58px;
+  .project-card .work img {
+    height: auto;
+    width: 500px;
+    border-radius: 10px;
   }
 
   .contact {
     gap: 150px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
-
-  .section-text {
-    font-size: 2.4rem;
-  }
-
-  .project-card {
-    padding: 58px;
   }
 }
 

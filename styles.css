@@ -34,6 +34,7 @@
   --transition-3: 0.3s ease-in-out;
 }
 
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -89,7 +90,7 @@ h4 {
   font-size: var(--fs-5);
 }
 
-.title {
+.hero-name {
   color: var(--primary-color);
 }
 
@@ -121,7 +122,6 @@ i {
   color: var(--secondary-color);
   padding: 10px 20px;
   font-size: var(--fs-6);
-  font-weight: var(--fw-700);
   border-radius: 5px;
   cursor: pointer;
 }
@@ -131,7 +131,7 @@ i {
   transform: scale(1.08);
 }
 
-/* Header */
+/* Header Styles */
 header {
   position: fixed;
   top: 0;
@@ -151,12 +151,14 @@ header {
 .navbar-brand {
   font-size: var(--fs-2);
   font-weight: var(--fw-700);
-  color: var(--text-color);
-  font-family: sans-serif;
 }
 
-.navbar-icon {
-  cursor: pointer;
+.navbar-brand::first-letter {
+  color: var(--primary-color);
+}
+
+.navbar-brand a {
+  color: var(--text-color);
 }
 
 .navbar-links {
@@ -183,16 +185,12 @@ header {
   border-radius: 5px;
 }
 
-.navbar-brand::first-letter {
-  color: var(--primary-color);
-}
-
 /* Home section */
-.hero {
+.hero-section {
   padding-block-start: calc(var(--section-padding) + 50px);
 }
 
-.hero .container {
+.hero-section.container {
   display: grid;
   gap: 50px;
 }
@@ -219,42 +217,42 @@ header {
   margin-top: 100px;
 }
 
-.hero-section {
+.hero-content {
   flex-basis: 70%;
   margin-top: 50px;
 }
 
-.hero-section .title-1 {
+.hero-content .title-1 {
   margin-bottom: 15px;
 }
 
-.hero-section .title-2 {
+.hero-content .title-2 {
   margin-bottom: 15px;
 }
 
-.hero .section-text {
+.hero-section .section-text {
   margin-bottom: 30px;
 }
 
-.socials {
+.hero-socials {
   margin-bottom: 30px;
 }
 
-.hero-buttons {
+.hero-actions {
   display: flex;
   justify-content: space-evenly;
   color: var(--primary-color);
   margin-bottom: 30px;
 }
 
-.hero-buttons a {
+.hero-actions a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
-.hero-buttons .call-to-action {
+.hero-actions .call-to-action {
   font-size: var(--fs-5);
   font-weight: var(--fw-700);
   background-color: var(--primary-color);
@@ -264,11 +262,11 @@ header {
   transition: transform 0.3s ease;
 }
 
-.hero-buttons .call-to-action:hover {
+.hero-actions .call-to-action:hover {
   transform: scale(1.08);
 }
 
-.hero-buttons .cv-button {
+.hero-actions .cv-button {
   font-size: var(--fs-5);
   font-weight: var(--fw-700);
   background-color: transparent;
@@ -279,19 +277,19 @@ header {
   transition: transform 0.3s ease;
 }
 
-.hero-buttons .cv-button:hover {
+.hero-actions .cv-button:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   transform: scale(1.08);
 }
 
 /* social media */
-.wrapper {
+.social-list {
   display: flex;
   justify-content: space-around;
 }
 
-.wrapper .icon i {
+.social-list .icon i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,17 +297,17 @@ header {
   color: var(--primary-color);
 }
 
-.wrapper .icon:hover {
+.social-list .icon:hover {
   transition: transform 0.3s ease;
   transform: scale(1.08);
 }
 
 /* About section */
-.about {
+.about-content {
   margin-bottom: 30px;
 }
 
-.about .section-text {
+.about-content .section-text {
   margin: 15px;
 }
 
@@ -395,7 +393,7 @@ header {
   margin-bottom: 30px;
 }
 
-.about-service {
+.service-item {
   background: var(--secondary-color);
   border-radius: 10px;
   padding: 1rem;
@@ -404,12 +402,12 @@ header {
   box-shadow: 3px 3px var(--primary-color);
 }
 
-.about-service:hover {
+.service-item:hover {
   transform: scale(1.02);
   box-shadow: 4px 4px var(--primary-color);
 }
 
-.about-service .title-3 {
+.service-item .title-3 {
   margin-bottom: 20px;
   text-align: center;
   margin-top: 10px;
@@ -417,7 +415,7 @@ header {
   color: var(--primary-color);
 }
 
-.about-service .service-icon {
+.service-item .service-icon {
   max-width: max-content;
   margin-inline: auto;
   margin-top: 10px;
@@ -426,11 +424,6 @@ header {
 /* Skills */
 .skills {
   margin-top: 50px;
-}
-
-.development {
-  margin-top: 20px;
-  margin-bottom: 30px;
 }
 
 .skillContainer {
@@ -442,6 +435,8 @@ header {
   padding: 3px 5px;
   border-radius: 5px;
   border: 1px solid var(--primary-color);
+  margin-top: 20px;
+  margin-bottom: 30px;
   box-shadow: 1px 1px var(--primary-color);
 }
 
@@ -623,13 +618,10 @@ textarea.input {
 
 /* footer */
 .bottom-navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   position: fixed;
   bottom: 0;
-  width: 100%;
-  height: 60px;
+  left: 0;
+  right: 0;
   background-color: var(--secondary-color);
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -639,7 +631,6 @@ textarea.input {
   justify-content: space-around;
   align-items: center;
   padding: 10px 0;
-  margin: 0;
 }
 
 .bottom-navbar ul li a {
@@ -672,15 +663,15 @@ textarea.input {
 @media (min-width: 575px) {
   .container {
     width: 100%;
-    margin-inline: auto;
+    margin: 0 auto;
   }
 
-  .home {
+  .hero-section .container {
     display: grid;
     grid-template-columns: 1fr;
   }
 
-  .hero-buttons {
+  .hero-actions {
     gap: 30px;
   }
 
@@ -718,28 +709,28 @@ textarea.input {
     font-size: var(--fs-4);
   }
 
-  .home {
+  .hero-section .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .hero-section {
+  .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .hero-section .title-2 {
+  .hero-content .title-2 {
     font-size: var(--fs-4);
   }
 
-  .hero-buttons {
+  .hero-actions {
     gap: 30px;
   }
 
-  .wrapper {
+  .social-list {
     gap: 30px;
   }
 
@@ -762,7 +753,7 @@ textarea.input {
   }
 
   .bottom-navbar {
-    display: flex;
+    display: block;
   }
 
   .footer .copyright {
@@ -775,7 +766,7 @@ textarea.input {
     display: flex;
   }
 
-  .home {
+  .hero-section .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -800,27 +791,27 @@ textarea.input {
 }
 
 @media (min-width: 992px) {
-  .home {
+  .hero-section .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
   }
 
-  .hero {
+  .hero-section {
     padding-block-start: 120 + 80px;
   }
 
-  .hero .container {
+  .hero-section .container {
     grid-template-columns: 1fr;
     align-items: center;
   }
 
-  .hero-section {
+  .hero-content {
     text-align: left;
   }
 
-  .hero .hire {
+  .hero-section .hire {
     justify-content: flex-start;
   }
 
@@ -836,7 +827,7 @@ textarea.input {
     max-width: 1140px;
   }
 
-  .home {
+  .hero-section .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

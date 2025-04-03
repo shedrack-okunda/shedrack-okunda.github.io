@@ -48,136 +48,128 @@
   <body>
     <!-- Header section -->
     <header>
-      <nav>
-        <div class="navbar">
-          <a class="navbar-brand" href="#home">Sheddy</a>
+      <nav class="navbar" aria-label="Main Navigation">
+        <h1 class="navbar-brand">
+          <a href="#home">Sheddy</a>
+        </h1>
 
-          <img
-            width="60"
-            height="60"
-            class="navbar-icon"
-            src="https://img.icons8.com/external-filled-color-icons-papa-vector/78/external-Developer-coding-filled-color-icons-papa-vector-2.png"
-            alt="external-Developer-coding-filled-color-icons-papa-vector-2"
-          />
+        <img
+          width="60"
+          height="60"
+          class="navbar-icon"
+          src="https://img.icons8.com/external-filled-color-icons-papa-vector/78/external-Developer-coding-filled-color-icons-papa-vector-2.png"
+          alt="Developer Icon"
+        />
 
-          <ul class="navbar-links" id="navbar-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-          </ul>
-        </div>
+        <ul class="navbar-links" id="navbar-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
       <!-- Home section -->
       <section
-        class="hero layout-section"
+        class="hero-section layout-section"
         id="home"
-        tabindex="0"
         aria-label="Home Section"
       >
         <div class="container">
-          <div class="home">
-            <div class="img-box">
-              <img
-                src="images/sheddy.JPG"
-                class="heroImage"
-                alt="Shedrack"
-                data-reveal="top"
-                loading="lazy"
-              />
+          <figure class="img-box">
+            <img
+              src="images/sheddy.JPG"
+              class="heroImage"
+              alt="Shedrack Okunda"
+              data-reveal="top"
+              loading="lazy"
+            />
+          </figure>
+
+          <div class="hero-content">
+            <h1 class="title-1" data-reveal="top" data-reveal-delay="0.25s">
+              Hello, I'm
+              <span class="hero-name">Shedrack</span>
+            </h1>
+
+            <h2 class="title-2" data-reveal="top" data-reveal-delay="0.5s">
+              Full-Stack Web Developer.
+            </h2>
+
+            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+              I'm a Full-Stack Web Developer based in Kenya, passionate about
+              bringing innovative ideas to life using the latest web
+              technologies. I specialize in creating exceptional and accessible
+              digital experiences, as well as tailored software solutions.
+            </p>
+
+            <div class="hero-actions" data-reveal="top" data-reveal-delay="1s">
+              <a
+                href="mailto:okundashedrack@gmail.com"
+                class="call-to-action"
+                type="button"
+              >
+                Hire Me!
+              </a>
+
+              <a
+                href="files/SHEDRACK OKUNDA-CV.pdf"
+                type="button"
+                class="cv-button"
+                download=""
+              >
+                View Resume
+                <i class="fa fa-download"></i>
+              </a>
             </div>
 
-            <div class="hero-section">
-              <h1 class="title-1" data-reveal="top" data-reveal-delay="0.25s">
-                Hello, I'm
-                <span class="title">Shedrack</span>
-              </h1>
+            <div
+              class="hero-socials"
+              data-reveal="top"
+              data-reveal-delay="1.2s"
+            >
+              <ul class="social-list">
+                <li class="icon github">
+                  <span>
+                    <a
+                      href="https://github.com/shedrack-okunda"
+                      class="social-link"
+                      aria-label="github"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </span>
+                </li>
 
-              <h3 class="title-2" data-reveal="top" data-reveal-delay="0.5s">
-                Full-Stack Web Developer.
-              </h3>
+                <li class="icon linkedin">
+                  <span>
+                    <a
+                      href="https://www.linkedin.com/in/shedrack-okunda"
+                      class="social-link"
+                      aria-label="linkedin"
+                      target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                  </span>
+                </li>
 
-              <p
-                class="section-text"
-                data-reveal="top"
-                data-reveal-delay="0.75s"
-              >
-                I'm a Full-Stack Web Developer based in Kenya, passionate about
-                bringing innovative ideas to life using the latest web
-                technologies. I specialize in creating exceptional and
-                accessible digital experiences, as well as tailored software
-                solutions.
-              </p>
-
-              <div
-                class="hero-buttons"
-                data-reveal="top"
-                data-reveal-delay="1s"
-              >
-                <a
-                  href="mailto:okundashedrack@gmail.com"
-                  class="call-to-action"
-                  type="button"
-                >
-                  Hire Me!
-                </a>
-
-                <a
-                  href="files/SHEDRACK OKUNDA-CV.pdf"
-                  type="button"
-                  class="cv-button"
-                  download=""
-                >
-                  View Resume
-                  <i class="fa fa-download"></i>
-                </a>
-              </div>
-
-              <div class="socials" data-reveal="top" data-reveal-delay="1.2s">
-                <ul class="wrapper">
-                  <li class="icon github">
-                    <span>
-                      <a
-                        href="https://github.com/shedrack-okunda"
-                        class="social-link"
-                        aria-label="github"
-                        target="_blank"
-                        ><i class="fab fa-github"></i
-                      ></a>
-                    </span>
-                  </li>
-
-                  <li class="icon linkedin">
-                    <span>
-                      <a
-                        href="https://www.linkedin.com/in/shedrack-okunda"
-                        class="social-link"
-                        aria-label="linkedin"
-                        target="_blank"
-                        ><i class="fab fa-linkedin"></i
-                      ></a>
-                    </span>
-                  </li>
-
-                  <li class="icon twitter">
-                    <span>
-                      <a
-                        href="https://twitter.com/sheddyke_"
-                        class="social-link"
-                        target="_blank"
-                        aria-label="x-twitter"
-                        ><i class="fab fa-x-twitter"></i
-                      ></a>
-                    </span>
-                  </li>
-                </ul>
-              </div>
+                <li class="icon twitter">
+                  <span>
+                    <a
+                      href="https://twitter.com/sheddyke_"
+                      class="social-link"
+                      target="_blank"
+                      aria-label="x-twitter"
+                      ><i class="fab fa-x-twitter"></i
+                    ></a>
+                  </span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -192,7 +184,7 @@
       >
         <div class="container">
           <h2 class="title-2" data-reveal="left">Who is Shedrack</h2>
-          <div class="about" data-reveal="left">
+          <div class="about-content" data-reveal="left">
             <p class="section-text">
               Hello! I'm Shedrack, a passionate Full-Stack Web Developer based
               in Kenya. My journey in web development began with a fascination
@@ -266,7 +258,7 @@
             </div>
           </div>
 
-          <div class="hero-buttons" data-reveal="top" data-reveal-delay="1s">
+          <div class="hero-actions" data-reveal="top" data-reveal-delay="1s">
             <a
               href="files/SHEDRACK OKUNDA-CV.pdf"
               type="button"
@@ -400,7 +392,7 @@
           <h2 class="title-2" data-reveal="left">What I do</h2>
           <div class="services-list">
             <div
-              class="about-service"
+              class="service-item"
               data-reveal="bottom"
               data-reveal-delay="0.25s"
             >
@@ -424,7 +416,7 @@
             </div>
 
             <div
-              class="about-service"
+              class="service-item"
               data-reveal="bottom"
               data-reveal-delay="0.5s"
             >
@@ -448,7 +440,7 @@
             </div>
 
             <div
-              class="about-service"
+              class="service-item"
               data-reveal="bottom"
               data-reveal-delay="0.85s"
             >
@@ -484,168 +476,166 @@
         <div class="container">
           <h2 class="title-2" data-reveal="left">Skills</h2>
 
-          <div class="development">
-            <div class="skillContainer" data-reveal="right">
-              <div class="skillSet">
-                <img
-                  width="64"
-                  height="64"
-                  src="https://img.icons8.com/nolan/64/express-js.png"
-                  alt="express-js"
-                />
+          <div class="skillContainer" data-reveal="right">
+            <div class="skillSet">
+              <img
+                width="64"
+                height="64"
+                src="https://img.icons8.com/nolan/64/express-js.png"
+                alt="express-js"
+              />
 
-                <p>Express JS</p>
-              </div>
+              <p>Express JS</p>
+            </div>
 
-              <div class="skillSet">
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/fluency/48/node-js.png"
-                  alt="node-js"
-                />
-                <p>Node JS</p>
-              </div>
+            <div class="skillSet">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/fluency/48/node-js.png"
+                alt="node-js"
+              />
+              <p>Node JS</p>
+            </div>
 
-              <div class="skillSet">
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/color/48/html-5--v1.png"
-                  alt="html-5--v1"
-                />
-                <p>HTML5</p>
-              </div>
+            <div class="skillSet">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/html-5--v1.png"
+                alt="html-5--v1"
+              />
+              <p>HTML5</p>
+            </div>
 
-              <div class="skillSet">
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/color/48/css3.png"
-                  alt="css3"
-                />
-                <p>CSS3</p>
-              </div>
+            <div class="skillSet">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/css3.png"
+                alt="css3"
+              />
+              <p>CSS3</p>
+            </div>
 
-              <div class="skillSet">
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/color/48/javascript--v1.png"
-                  alt="javascript--v1"
-                />
-                <p>JavaScript</p>
-              </div>
+            <div class="skillSet">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/javascript--v1.png"
+                alt="javascript--v1"
+              />
+              <p>JavaScript</p>
+            </div>
 
-              <div class="skillSet">
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/color/48/mongodb.png"
-                  alt="mongodb"
-                />
-                <p>MongoDB</p>
-              </div>
+            <div class="skillSet">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/mongodb.png"
+                alt="mongodb"
+              />
+              <p>MongoDB</p>
+            </div>
 
-              <div class="skillSet">
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/color/48/figma--v1.png"
-                  alt="figma--v1"
-                />
-                <p>Figma</p>
-              </div>
+            <div class="skillSet">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/figma--v1.png"
+                alt="figma--v1"
+              />
+              <p>Figma</p>
+            </div>
 
-              <div class="skillSet">
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/fluency/48/canva.png"
-                  alt="canva"
-                />
-                <p>Canva</p>
-              </div>
+            <div class="skillSet">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/fluency/48/canva.png"
+                alt="canva"
+              />
+              <p>Canva</p>
+            </div>
 
-              <div class="skillSet">
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/color/48/material-ui.png"
-                  alt="material-ui"
-                />
-                <p>Material UI</p>
-              </div>
+            <div class="skillSet">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/material-ui.png"
+                alt="material-ui"
+              />
+              <p>Material UI</p>
+            </div>
 
-              <div class="skillSet">
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/color/48/react-native.png"
-                  alt="react-native"
-                />
-                <p>React JS</p>
-              </div>
+            <div class="skillSet">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/react-native.png"
+                alt="react-native"
+              />
+              <p>React JS</p>
+            </div>
 
-              <div class="skillSet">
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/color/48/python--v1.png"
-                  alt="python--v1"
-                />
-                <p>Python</p>
-              </div>
+            <div class="skillSet">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/python--v1.png"
+                alt="python--v1"
+              />
+              <p>Python</p>
+            </div>
 
-              <div class="skillSet">
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/color/48/ubuntu--v1.png"
-                  alt="ubuntu--v1"
-                />
-                <p>Ubuntu</p>
-              </div>
+            <div class="skillSet">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/ubuntu--v1.png"
+                alt="ubuntu--v1"
+              />
+              <p>Ubuntu</p>
+            </div>
 
-              <div class="skillSet">
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/color/48/windows-11.png"
-                  alt="windows-11"
-                />
-                <p>Windows</p>
-              </div>
+            <div class="skillSet">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/windows-11.png"
+                alt="windows-11"
+              />
+              <p>Windows</p>
+            </div>
 
-              <div class="skillSet">
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/fluency/48/visual-studio-code-2019.png"
-                  alt="visual-studio-code-2019"
-                />
-                <p>VS Code</p>
-              </div>
+            <div class="skillSet">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/fluency/48/visual-studio-code-2019.png"
+                alt="visual-studio-code-2019"
+              />
+              <p>VS Code</p>
+            </div>
 
-              <div class="skillSet">
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/fluency/48/typescript--v1.png"
-                  alt="typescript--v1"
-                />
-                <p>TypeScript</p>
-              </div>
+            <div class="skillSet">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/fluency/48/typescript--v1.png"
+                alt="typescript--v1"
+              />
+              <p>TypeScript</p>
+            </div>
 
-              <div class="skillSet">
-                <img
-                  width="48"
-                  height="48"
-                  src="https://img.icons8.com/color/48/mysql-logo.png"
-                  alt="mysql-logo"
-                />
-                <p>MySQL</p>
-              </div>
+            <div class="skillSet">
+              <img
+                width="48"
+                height="48"
+                src="https://img.icons8.com/color/48/mysql-logo.png"
+                alt="mysql-logo"
+              />
+              <p>MySQL</p>
             </div>
           </div>
         </div>
@@ -666,34 +656,34 @@
             touch if you'd like to work together.
           </p>
 
-            <div class="project-card">
-              <div class="work" data-reveal="left">
-                <h4 class="title-3">
-                  To-do App <i class="fa-solid fa-list-check project-icon"></i>
-                </h4>
+          <div class="project-card">
+            <div class="work" data-reveal="left">
+              <h4 class="title-3">
+                To-do App <i class="fa-solid fa-list-check project-icon"></i>
+              </h4>
 
-                <p class="section-text">
-                  The To-Do App is a user-friendly task management tool designed
-                  to help users organize their daily activities efficiently.
-                  With a clean and intuitive interface, this application allows
-                  users to easily add, manage, and track their tasks.
-                </p>
+              <p class="section-text">
+                The To-Do App is a user-friendly task management tool designed
+                to help users organize their daily activities efficiently. With
+                a clean and intuitive interface, this application allows users
+                to easily add, manage, and track their tasks.
+              </p>
 
-                <div class="project-image">
-                  <img
-                    src="images/todo-list.png"
-                    alt="Todo List Screenshot"
-                    loading="lazy"
-                  />
-                </div>
+              <div class="project-image">
+                <img
+                  src="images/todo-list.png"
+                  alt="Todo List Screenshot"
+                  loading="lazy"
+                />
               </div>
-              <a
-                href="https://github.com/shedrack-okunda/To-Do-List"
-                class="project-btn"
-                target="_blank"
-                >Open Project on GitHub <i class="fab fa-github"></i
-              ></a>
             </div>
+            <a
+              href="https://github.com/shedrack-okunda/To-Do-List"
+              class="project-btn"
+              target="_blank"
+              >Open Project on GitHub <i class="fab fa-github"></i
+            ></a>
+          </div>
         </div>
       </section>
 
@@ -756,7 +746,7 @@
               <label for="hire-name" class="sr-only"></label>
               <input
                 type="text"
-                id="hire-name"
+                id="contactForm-name"
                 placeholder="Enter your name *"
                 required
                 class="input"
@@ -765,7 +755,7 @@
               <label for="hire-email" class="sr-only"></label>
               <input
                 type="email"
-                id="hire-email"
+                id="contactForm-email"
                 placeholder="Enter your email *"
                 required
                 class="input"
@@ -774,7 +764,7 @@
               <label for="hire-message" class="sr-only"></label>
               <textarea
                 name="message"
-                id="hire-message"
+                id="contactForm-message"
                 placeholder="Enter your message *"
                 required
                 class="input"

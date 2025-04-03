@@ -5,6 +5,10 @@ This repository hosts the source code for my portfolio website, showcasing my sk
 
 ## Description
 
+# Welcome to My Personal Portfolio Website
+
+This repository contains the source code for my personal portfolio website, where I showcase my skills, projects, and experience as a web developer.
+
 In this portfolio, you will find:
 
 - **Skills**: A comprehensive list of my technical skills, including programming languages, frameworks, and tools I am proficient in.

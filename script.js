@@ -1,24 +1,34 @@
-// Navigation highlighting based on scroll
+// Navigation highlighting
 const sections = document.querySelectorAll("section");
 const menuLinks = document.querySelectorAll("nav ul li a");
 
-window.onscroll = () => {
-  sections.forEach((section) => {
-    const top = window.scrollY;
-    const offset = section.offsetTop - 150;
-    const height = section.offsetHeight;
-    const id = section.getAttribute("id");
+const highlightActiveSection = () => {
+  const activeSection = getActiveSection();
 
-    // Highlight menu link based on scroll position
-    if (top >= offset && top < offset + height) {
-      menuLinks.forEach((link) => {
-        link.classList.remove("active");
-        if (link.getAttribute("href").includes(id)) {
-          link.classList.add("active");
-        }
-      });
+  menuLinks.forEach((link) => {
+    link.classList.remove("active");
+
+    if (link.getAttribute("href").includes(activeSection.id)) {
+      link.classList.add("active");
     }
   });
+};
+
+const getActiveSection = () => {
+  const scrollPosition = window.scrollY;
+  const sections = document.querySelectorAll("section");
+  let activeSection = null;
+
+  sections.forEach((section) => {
+    const offset = section.offsetTop - 150;
+    const height = section.offsetHeight;
+
+    if (scrollPosition >= offset && scrollPosition < offset + height) {
+      activeSection = section;
+    }
+  });
+
+  return activeSection;
 };
 
 // Scroll reveal functionality

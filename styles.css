@@ -189,7 +189,7 @@ header {
   padding-block-start: calc(var(--section-padding) + 50px);
 }
 
-.hero-section.container {
+.hero-section .container {
   display: grid;
   gap: 50px;
 }
@@ -329,7 +329,17 @@ header {
 }
 
 /* Experience Section  */
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
 .experience-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 20px;
 }
 
